@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.simpleaccount.mapper.UserServiceMapper">
+    <resultMap id="userMapper" type="com.simpleaccount.entry.UserInfo"></resultMap>
+    <select id="queryUserInfo" resultType="com.simpleaccount.entry.UserInfo" resultMap="userMapper">
+        SELECT * FROM user_info
+    </select>
+    <select id="userLogin" resultType="com.simpleaccount.entry.UserInfo" resultMap="userMapper">
+        SELECT * FROM user_info where username = #{username} and password = #{password}
+    </select>
+    <insert id="userRegister" parameterType="com.simpleaccount.entry.UserInfo" >
+        insert into user_info (username, password)
+        values (#{username}, #{password})
+    </insert>
+    <select id="queryUserInfoByName" resultType="com.simpleaccount.entry.UserInfo" resultMap="userMapper">
+        SELECT * FROM user_info where  username = #{username}
+    </select>
+</mapper>

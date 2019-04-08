@@ -1,0 +1,21 @@
+package com.simpleaccount;
+
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+/**
+ *
+ * @Description: 启动类
+ * @param: 
+ * @return: 
+ * @auther: LS
+ * @date: 2019/3/8 19:57
+ */
+@SpringBootApplication
+@MapperScan("com.simpleaccount.mapper")
+public class SimpleaccountApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(SimpleaccountApplication.class, args);
+    }
+}

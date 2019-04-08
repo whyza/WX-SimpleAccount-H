@@ -1,0 +1,21 @@
+2019-03-08 14:07:36.836 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfo - ==>  Preparing: SELECT * FROM user_info 
+2019-03-08 14:07:36.863 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfo - ==> Parameters: 
+2019-03-08 14:07:36.908 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfo - <==      Total: 5
+2019-03-08 14:23:33.052 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfo - ==>  Preparing: SELECT * FROM user_info 
+2019-03-08 14:23:33.086 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfo - ==> Parameters: 
+2019-03-08 14:23:33.131 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfo - <==      Total: 5
+2019-03-08 14:24:52.333 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfo - ==>  Preparing: SELECT * FROM user_info 
+2019-03-08 14:24:52.357 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfo - ==> Parameters: 
+2019-03-08 14:24:52.398 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfo - <==      Total: 5
+2019-03-08 14:26:38.827 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfo - ==>  Preparing: SELECT * FROM user_info 
+2019-03-08 14:26:38.863 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfo - ==> Parameters: 
+2019-03-08 14:26:38.899 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfo - <==      Total: 5
+2019-03-08 15:47:10.808 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfo - ==>  Preparing: SELECT * FROM user_info 
+2019-03-08 15:47:10.868 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfo - ==> Parameters: 
+2019-03-08 15:47:10.956 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfo - <==      Total: 5
+2019-03-08 15:47:25.477 logback [http-nio-8080-exec-8] DEBUG c.s.m.U.queryUserInfo - ==>  Preparing: SELECT * FROM user_info 
+2019-03-08 15:47:25.477 logback [http-nio-8080-exec-8] DEBUG c.s.m.U.queryUserInfo - ==> Parameters: 
+2019-03-08 15:47:25.484 logback [http-nio-8080-exec-8] DEBUG c.s.m.U.queryUserInfo - <==      Total: 5
+2019-03-08 15:47:31.548 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfo - ==>  Preparing: SELECT * FROM user_info 
+2019-03-08 15:47:31.549 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfo - ==> Parameters: 
+2019-03-08 15:47:31.552 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfo - <==      Total: 5

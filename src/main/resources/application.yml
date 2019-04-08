@@ -1,0 +1,26 @@
+--- # 端口
+server:
+  port: 8080
+--- #数据源配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ui_bbs?characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: root
+    password: zaq123
+--- #mybatis配置
+mybatis:
+  mapper-locations:
+  - classpath:com/simpleaccount/mapper/sqlmapper/*.xml
+  type-aliases-package: com.simpleaccount.entry
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+    level:
+      com.simpleaccount.mapper: DEBUG
+      com.simpleaccount.controller: WARN
+    config:
+      classpath:logback-spring.xml
+
+
+

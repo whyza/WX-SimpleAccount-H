@@ -1,0 +1,540 @@
+2019-03-23 13:03:49.042 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:03:49.085 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:03:49.152 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:03:49.162 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:03:49.163 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:03:49.165 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:03:53.503 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:03:53.503 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:03:53.505 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:03:53.506 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:03:53.507 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:03:53.510 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:03:54.919 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:03:54.920 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:03:54.921 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:03:54.921 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:03:54.922 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:03:54.923 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:04:01.390 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:04:01.390 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:04:01.392 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:04:01.393 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:04:01.394 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:04:01.396 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:04:02.537 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:04:02.537 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:04:02.538 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:04:09.064 logback [http-nio-8080-exec-8] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:04:09.064 logback [http-nio-8080-exec-8] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:04:09.065 logback [http-nio-8080-exec-8] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:04:19.848 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:04:19.849 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:04:19.850 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:06:01.691 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:06:01.697 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:06:01.717 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:06:06.431 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:06:06.432 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:06:06.435 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:06:06.436 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:06:06.437 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:06:06.439 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:06:06.512 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:06:06.513 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:06:06.515 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:06:35.402 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:06:35.409 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:06:35.428 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:06:35.434 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:06:35.435 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:06:35.437 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:06:35.649 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:06:35.650 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:06:35.651 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:07:10.834 logback [http-nio-8080-exec-4] DEBUG c.s.m.UserServiceMapper.userRegister - ==>  Preparing: insert into user_info (username, password) values (?, ?) 
+2019-03-23 13:07:10.840 logback [http-nio-8080-exec-4] DEBUG c.s.m.UserServiceMapper.userRegister - ==> Parameters: 1www(String), 39c60a26f0d66c47cfc4dd15f8f734b5(String)
+2019-03-23 13:07:10.856 logback [http-nio-8080-exec-4] DEBUG c.s.m.UserServiceMapper.userRegister - <==    Updates: 1
+2019-03-23 13:09:27.892 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:09:27.918 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:09:27.944 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:09:27.950 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:09:27.950 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:09:27.951 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:09:28.126 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:09:28.126 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:09:28.132 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:09:40.195 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:09:40.196 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:09:40.198 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:09:43.809 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:09:43.810 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: (String)
+2019-03-23 13:09:43.811 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 0
+2019-03-23 13:13:24.918 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:13:24.953 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:13:24.983 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:13:34.577 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:13:34.581 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:13:34.583 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:13:34.586 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:13:34.586 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:13:34.592 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:13:35.728 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:13:35.729 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:13:35.730 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:13:45.804 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:13:45.804 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:13:45.805 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:13:48.528 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:13:48.528 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin1(String)
+2019-03-23 13:13:48.531 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 0
+2019-03-23 13:19:30.521 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:19:30.548 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin1(String)
+2019-03-23 13:19:30.577 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 0
+2019-03-23 13:19:34.297 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:19:34.298 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:19:34.307 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:19:45.099 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:19:45.100 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:19:45.109 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:19:45.114 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:19:45.114 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:19:45.116 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:19:49.472 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:19:49.473 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:19:49.475 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:19:49.475 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:19:49.475 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:19:49.477 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:19:50.580 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:19:50.580 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:19:50.581 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:21:50.205 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:21:50.230 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:21:50.256 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:21:50.260 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:21:50.261 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:21:50.262 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:21:52.742 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:21:52.743 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:21:52.745 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:21:52.746 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:21:52.746 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:21:52.748 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:21:53.812 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:21:53.813 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: APP(String)
+2019-03-23 13:21:53.813 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 0
+2019-03-23 13:24:27.060 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:24:27.085 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:24:27.108 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:24:27.111 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:24:27.111 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:24:27.113 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:24:42.211 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:24:42.212 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:24:42.214 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:24:42.215 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:24:42.216 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:24:42.219 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:27:24.862 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:27:24.890 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:27:24.917 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:27:24.921 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:27:24.922 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:27:24.923 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:28:21.668 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:28:21.669 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:28:21.671 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:28:21.671 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:28:21.672 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:28:21.674 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:30:19.820 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:30:19.846 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:30:19.878 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:30:19.882 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:30:19.882 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:30:19.884 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:30:21.983 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:30:21.984 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:30:21.985 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:30:21.985 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:30:21.986 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:30:21.987 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:36:51.437 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:36:51.472 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:36:51.512 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:36:51.521 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:36:51.521 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:36:51.522 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:36:53.639 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:36:53.639 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:36:53.641 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:36:53.643 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:36:53.643 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:36:53.647 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:36:54.790 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:36:54.790 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:36:54.792 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:37:09.786 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:37:09.787 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:37:09.789 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:37:09.789 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:37:09.789 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:37:09.791 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:37:10.136 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:37:10.136 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:37:10.137 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:37:21.185 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:37:21.186 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:37:21.187 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:37:21.188 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:37:21.189 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:37:21.191 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:37:28.353 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:37:28.353 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:37:28.357 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:37:28.358 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:37:28.358 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:37:28.359 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:37:28.694 logback [http-nio-8080-exec-8] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:37:28.694 logback [http-nio-8080-exec-8] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:37:28.695 logback [http-nio-8080-exec-8] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:37:37.116 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:37:37.116 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:37:37.117 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:37:37.118 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:37:37.119 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:37:37.120 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:37:38.189 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:37:38.190 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:37:38.193 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:37:38.195 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:37:38.196 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:37:38.197 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:37:43.237 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:37:43.237 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:37:43.238 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:37:43.239 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:37:43.239 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:37:43.240 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:37:43.536 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:37:43.536 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:37:43.538 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:38:14.197 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:38:14.197 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:38:14.199 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:38:14.200 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:38:14.201 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:38:14.203 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:38:16.229 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:38:16.230 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:38:16.231 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:38:16.231 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:38:16.231 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:38:16.232 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:38:30.212 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:38:30.212 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:38:30.213 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:38:30.214 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:38:30.215 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:38:30.216 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:38:46.375 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:38:46.375 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:38:46.376 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:38:46.376 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:38:46.376 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:38:46.377 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:39:01.731 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:39:01.731 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:39:01.733 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:39:01.733 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:39:01.734 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:39:01.735 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:39:14.138 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:39:14.138 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:39:14.139 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:39:14.139 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:39:14.139 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:39:14.140 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:39:36.309 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:39:36.309 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:39:36.311 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:39:36.312 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:39:36.312 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:39:36.314 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:48:25.869 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:48:25.906 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:48:25.941 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:48:25.945 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:48:25.946 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:48:25.947 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:48:28.526 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:48:28.527 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:48:28.528 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:48:28.528 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:48:28.528 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:48:28.530 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:48:35.016 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:48:35.016 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:48:35.017 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:48:35.018 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:48:35.018 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:48:35.020 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:53:24.646 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:53:24.673 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:53:24.703 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:53:24.709 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:53:24.710 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:53:24.711 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:54:35.497 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:54:35.522 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:54:35.546 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:54:35.550 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:54:35.550 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:54:35.552 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:54:36.855 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:54:36.856 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:54:36.857 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 13:59:34.279 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 13:59:34.309 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 13:59:34.353 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:02:34.337 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:02:34.340 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:02:34.344 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:02:49.155 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:02:49.155 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:02:49.201 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:05:08.193 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:05:08.196 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:05:08.205 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:05:49.464 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:05:49.465 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:05:49.469 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:06:22.633 logback [http-nio-8080-exec-8] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:06:22.634 logback [http-nio-8080-exec-8] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:06:22.636 logback [http-nio-8080-exec-8] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:06:22.640 logback [http-nio-8080-exec-8] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:06:22.640 logback [http-nio-8080-exec-8] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:06:22.643 logback [http-nio-8080-exec-8] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:07:07.102 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:07:07.103 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:07:07.105 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:07:07.105 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:07:07.106 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:07:07.108 logback [http-nio-8080-exec-10] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:07:43.181 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:07:43.181 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:07:43.183 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:07:43.190 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:07:43.191 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:07:43.194 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:09:53.083 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:09:53.084 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:09:53.086 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:09:53.090 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:09:53.097 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:09:53.113 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:09:55.157 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:09:55.158 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:09:55.161 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:09:55.162 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:09:55.162 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:09:55.163 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:10:10.938 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:10:10.938 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:10:10.940 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:10:10.940 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:10:10.940 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:10:10.942 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:11:51.355 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:11:51.357 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:11:51.361 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:11:51.363 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:11:51.364 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:11:51.367 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:11:54.565 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:11:54.565 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:11:54.567 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:11:54.568 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:11:54.568 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:11:54.569 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:12:28.978 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:12:28.979 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:12:28.981 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:12:28.982 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:12:28.982 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:12:28.984 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:13:58.045 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:13:58.045 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:13:58.047 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:13:58.047 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:13:58.047 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:13:58.049 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:14:38.536 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfo - ==>  Preparing: SELECT * FROM user_info 
+2019-03-23 14:14:38.537 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfo - ==> Parameters: 
+2019-03-23 14:14:38.547 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfo - <==      Total: 14
+2019-03-23 14:16:45.841 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:16:45.841 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:16:45.845 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:16:45.846 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:16:45.847 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:16:45.849 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:16:50.529 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:16:50.530 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:16:50.533 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:16:50.533 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:16:50.533 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:16:50.535 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:17:08.057 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:17:08.058 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:17:08.060 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:17:08.060 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:17:08.060 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:17:08.063 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:18:07.357 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:18:07.360 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:18:07.363 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:18:07.364 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:18:07.365 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:18:07.367 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:18:10.637 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:18:10.638 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:18:10.640 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:18:10.642 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:18:10.642 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:18:10.644 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:18:11.558 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:18:11.560 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:18:11.562 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:18:11.564 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:18:11.564 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:18:11.566 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:18:33.048 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:18:33.049 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:18:33.051 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:18:33.052 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:18:33.052 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:18:33.054 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:18:36.448 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:18:36.448 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:18:36.450 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:18:36.451 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:18:36.451 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:18:36.453 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:18:39.067 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:18:39.068 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:18:39.069 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:18:39.070 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:18:39.071 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:18:39.073 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:18:40.469 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:18:40.470 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:18:40.471 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:18:40.472 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:18:40.472 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:18:40.474 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:18:41.579 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:18:41.579 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:18:41.581 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:18:41.582 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:18:41.582 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:18:41.584 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:18:50.691 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:18:50.691 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:18:50.692 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:18:50.693 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:18:50.693 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:18:50.694 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:19:15.009 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:19:15.009 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:19:15.011 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:19:15.011 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:19:15.012 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:19:15.013 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:19:18.672 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:19:18.672 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:19:18.673 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:19:18.674 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:19:18.674 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:19:18.675 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:19:19.962 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:19:19.963 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:19:19.965 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:19:19.965 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:19:19.966 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:19:19.967 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:19:20.955 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:19:20.956 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:19:20.956 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:19:20.957 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:19:20.957 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:19:20.958 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:19:21.971 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:19:21.971 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:19:21.972 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:19:21.972 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:19:21.973 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:19:21.973 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:19:22.804 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:19:22.804 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:19:22.806 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:19:22.807 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:19:22.808 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:19:22.809 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:19:23.731 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:19:23.731 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:19:23.733 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:19:23.733 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:19:23.734 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:19:23.735 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:19:24.507 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:19:24.507 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:19:24.509 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:19:24.509 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:19:24.509 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:19:24.512 logback [http-nio-8080-exec-3] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:19:30.929 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:19:30.929 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:19:30.931 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:19:30.931 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:19:30.932 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:19:30.933 logback [http-nio-8080-exec-5] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:19:32.372 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:19:32.373 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:19:32.382 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:19:32.383 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:19:32.383 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:19:32.384 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:19:33.267 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:19:33.267 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:19:33.268 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:19:33.269 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:19:33.269 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:19:33.270 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:20:18.106 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:20:18.107 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:20:18.108 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:20:18.109 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:20:18.109 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:20:18.111 logback [http-nio-8080-exec-1] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:20:18.157 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:20:18.158 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:20:18.161 logback [http-nio-8080-exec-2] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:20:24.318 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:20:24.319 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:20:24.320 logback [http-nio-8080-exec-4] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:20:34.349 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:20:34.350 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:20:34.351 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:20:34.351 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:20:34.352 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:20:34.353 logback [http-nio-8080-exec-6] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:20:34.397 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==>  Preparing: SELECT * FROM user_info where username = ? 
+2019-03-23 14:20:34.398 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - ==> Parameters: admin(String)
+2019-03-23 14:20:34.402 logback [http-nio-8080-exec-7] DEBUG c.s.m.U.queryUserInfoByName - <==      Total: 1
+2019-03-23 14:20:46.744 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfo - ==>  Preparing: SELECT * FROM user_info 
+2019-03-23 14:20:46.744 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfo - ==> Parameters: 
+2019-03-23 14:20:46.754 logback [http-nio-8080-exec-9] DEBUG c.s.m.U.queryUserInfo - <==      Total: 14
+2019-03-23 14:21:09.778 logback [http-nio-8080-exec-1] DEBUG c.s.m.UserServiceMapper.userRegister - ==>  Preparing: insert into user_info (username, password) values (?, ?) 
+2019-03-23 14:21:09.779 logback [http-nio-8080-exec-1] DEBUG c.s.m.UserServiceMapper.userRegister - ==> Parameters: 1qwee(String), 2fca2db923655097a5e4a099915d725b(String)
+2019-03-23 14:21:09.793 logback [http-nio-8080-exec-1] DEBUG c.s.m.UserServiceMapper.userRegister - <==    Updates: 1
