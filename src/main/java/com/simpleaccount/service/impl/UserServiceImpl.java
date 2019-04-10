@@ -5,6 +5,8 @@ import com.simpleaccount.expction.CommonException;
 import com.simpleaccount.mapper.UserServiceMapper;
 import com.simpleaccount.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
@@ -23,6 +25,7 @@ public class UserServiceImpl implements UserService {
     UserServiceMapper userServiceMapper;
 
     @Override
+    @Cacheable(value = "userList")
     public List<UserInfo> queryUserInfo() {
         return userServiceMapper.queryUserInfo();
     }
@@ -34,6 +37,7 @@ public class UserServiceImpl implements UserService {
      * @return
      */
     @Override
+    @Cacheable(cacheNames = "user",key = "#username")
     public UserInfo queryUserInfoByName(String username) {
         UserInfo userInfo  = userServiceMapper.queryUserInfoByName(username);
         if (userInfo == null) {
@@ -68,6 +72,7 @@ public class UserServiceImpl implements UserService {
      * @return
      */
     @Override
+    @CacheEvict(value="userList",allEntries=true)
     public boolean userRegister(UserInfo userInfo) {
         if (userInfo != null) {
             // 将密码加盐

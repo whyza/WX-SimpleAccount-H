@@ -1,9 +1,10 @@
 package com.simpleaccount.entry;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 @Data
-public class UserInfo {
+public class UserInfo implements Serializable {
     private Integer userid;
 
     private String username;

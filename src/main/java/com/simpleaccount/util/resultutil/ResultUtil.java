@@ -2,6 +2,8 @@ package com.simpleaccount.util.resultutil;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * @Description: java类作用描述
  * @Author: Whyza
@@ -9,7 +11,7 @@ import lombok.Data;
  * @Version: 1.0
  */
 @Data
-public class ResultUtil<T> {
+public class ResultUtil<T> implements Serializable {
 //    /**
 //     * 是否成功
 //     */

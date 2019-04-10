@@ -10,6 +10,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +22,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.HashMap;
 
 /**
- * @Description: java类作用描述
+ * @Description: UserController
  * @Author: Whyza
  * @CreateDate: 2019/3/8 10:27
  * @Version: 1.0
@@ -26,6 +30,8 @@ import java.util.HashMap;
 @Controller
 @EnableAutoConfiguration
 public class UserController {
+    @Autowired
+    RedisTemplate redisTemplate;
     private final static Logger logger = LoggerFactory.getLogger(UserController.class);
     @Autowired
     UserService userService;
