@@ -20,10 +20,10 @@ public interface UserService {
     List<UserInfo> queryUserInfo();
     /**
      * 根据用户名查询用户信息
-     * @param username
+     * @param userName
      * @return
      */
-    UserInfo queryUserInfoByName(String username);
+    UserInfo queryUserInfoByName(String userName);
     /**
      * 用户登陆
      * @param userInfo
@@ -37,4 +37,11 @@ public interface UserService {
      * @return
      */
     boolean userRegister(UserInfo userInfo);
+
+    /**
+     * 根据opendId判断是否已经存在用户
+     * @param openId
+     * @return
+     */
+    UserInfo isExitUserByOpenId(String openId);
 }

@@ -8,13 +8,17 @@
         SELECT * FROM user_info
     </select>
     <select id="userLogin" resultType="com.simpleaccount.entry.UserInfo" resultMap="userMapper">
-        SELECT * FROM user_info where username = #{username} and password = #{password}
+        SELECT * FROM user_info where userName = #{userName} and password = #{password}
     </select>
-    <insert id="userRegister" parameterType="com.simpleaccount.entry.UserInfo" >
-        insert into user_info (username, password)
-        values (#{username}, #{password})
+    <insert id="userRegister" parameterType="com.simpleaccount.entry.UserInfo">
+        insert into user_info (userName,avatarUrl,country,province,city,gender,language,createTime, openId)
+        values (#{userName}, #{avatarUrl},#{country},#{province},#{city},#{gender},#{language},#{createTime},#{openId})
     </insert>
     <select id="queryUserInfoByName" resultType="com.simpleaccount.entry.UserInfo" resultMap="userMapper">
-        SELECT * FROM user_info where  username = #{username}
+        SELECT * FROM user_info where  userName = #{userName}
+    </select>
+
+    <select id="isExitUserByOpenId" resultType="com.simpleaccount.entry.UserInfo" resultMap="userMapper">
+        SELECT * FROM user_info where  openId = #{openId}
     </select>
 </mapper>

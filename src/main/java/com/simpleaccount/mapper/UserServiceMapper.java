@@ -2,6 +2,7 @@ package com.simpleaccount.mapper;
 
 import com.simpleaccount.entry.UserInfo;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -36,8 +37,15 @@ public interface UserServiceMapper {
 
     /**
      * 根据用户名查询用户信息
-     * @param username
+     * @param userName
      * @return
      */
-    UserInfo queryUserInfoByName(String username);
+    UserInfo queryUserInfoByName(@Param(value = "userName") String userName);
+
+    /**
+     * 根据opendId判断是否已经存在用户
+     * @param openId
+     * @return
+     */
+    UserInfo isExitUserByOpenId(String openId);
 }

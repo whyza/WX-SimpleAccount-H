@@ -33,13 +33,13 @@ public class UserServiceImpl implements UserService {
     /**
      * 根据用户名查询用户信息
      *
-     * @param username
+     * @param userName
      * @return
      */
     @Override
-    @Cacheable(cacheNames = "user",key = "#username")
-    public UserInfo queryUserInfoByName(String username) {
-        UserInfo userInfo  = userServiceMapper.queryUserInfoByName(username);
+    @Cacheable(cacheNames = "user",key = "#userName")
+    public UserInfo queryUserInfoByName(String userName) {
+        UserInfo userInfo  = userServiceMapper.queryUserInfoByName(userName);
         if (userInfo == null) {
             throw new CommonException(400,"用户不存在，请重新登录");
         }
@@ -54,10 +54,10 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     public boolean userLogin(UserInfo userInfo) {
-        UserInfo users = userServiceMapper.queryUserInfoByName(userInfo.getUsername());
+        UserInfo users = userServiceMapper.queryUserInfoByName(userInfo.getUserName());
         if (users != null) {
-            String userPwd = DigestUtils.md5DigestAsHex((userInfo.getUsername() + userInfo.getPassword()).getBytes());
-            if ((users.getUsername().equals(userInfo.getUsername()) && users.getPassword().equals(userPwd)) == true) {
+            String userPwd = DigestUtils.md5DigestAsHex((userInfo.getUserName() + userInfo.getPassword()).getBytes());
+            if ((users.getUserName().equals(userInfo.getUserName()) && users.getPassword().equals(userPwd)) == true) {
                 return true;
             } else {
                 return false;
@@ -76,14 +76,26 @@ public class UserServiceImpl implements UserService {
     public boolean userRegister(UserInfo userInfo) {
         if (userInfo != null) {
             // 将密码加盐
-            userInfo.setPassword(userInfo.getUsername() + userInfo.getPassword());
+            userInfo.setPassword(userInfo.getUserName() + userInfo.getPassword());
             // 将密码设置为md5密文密码形式
             userInfo.setPassword(DigestUtils.md5DigestAsHex(userInfo.getPassword().getBytes()));
-            userInfo.setRegistertime(new Timestamp(System.currentTimeMillis()));
+            userInfo.setCreateTime(new Timestamp(System.currentTimeMillis()));
             // 添加到数据库
             return userServiceMapper.userRegister(userInfo);
         } else {
             return false;
         }
+    }
+
+    /**
+     * 根据opendId判断是否已经存在用户
+     *
+     * @param openId
+     * @return
+     */
+    @Override
+    @Cacheable(value = "userIsExit")
+    public UserInfo isExitUserByOpenId(String openId) {
+        return userServiceMapper.isExitUserByOpenId(openId);
     }
 }

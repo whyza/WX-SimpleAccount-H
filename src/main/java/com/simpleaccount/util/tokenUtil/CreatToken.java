@@ -52,7 +52,7 @@ public class CreatToken {
             map.put("alg", "HS256");
             map.put("typ", "JWT");
             token = JWT.create().withHeader(map)
-                    .withClaim("userName",userInfo.getUsername())
+                    .withClaim("userName",userInfo.getUserName())
                     .withIssuedAt(iatDate)
                     .withExpiresAt(expiresDate)
                     .sign(Algorithm.HMAC256(SECRET));

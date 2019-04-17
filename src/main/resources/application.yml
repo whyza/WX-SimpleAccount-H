@@ -5,7 +5,7 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/ui_bbs?characterEncoding=utf8&serverTimezone=GMT%2B8
+    url: jdbc:mysql://localhost:3306/wxsimpleaccount?characterEncoding=utf8&serverTimezone=GMT%2B8
     username: root
     password: zaq123
 --- #mybatis配置

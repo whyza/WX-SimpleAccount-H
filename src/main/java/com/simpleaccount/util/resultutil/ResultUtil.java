@@ -22,11 +22,12 @@ public class ResultUtil<T> implements Serializable {
      * 返回数据
      */
     private T data;
-    public ResultUtil() {
-    }
     public ResultUtil(String message, T data) {
 //        this.success = success;
         this.message = message;
         this.data = data;
+    }
+    public ResultUtil(String message) {
+        this.message = message;
     }
 }
