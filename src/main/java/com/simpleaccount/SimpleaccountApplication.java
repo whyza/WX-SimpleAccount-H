@@ -10,13 +10,12 @@ import org.springframework.cache.annotation.EnableCaching;
 /**
  *
  * @Description: 启动类
- * @param: 
- * @return: 
+ * @param:
+ * @return:
  * @auther: LS
  * @date: 2019/3/8 19:57
  */
-@SpringBootApplication()
-//开启缓存
+@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 @EnableCaching
 @MapperScan("com.simpleaccount.mapper")
 public class SimpleaccountApplication {
