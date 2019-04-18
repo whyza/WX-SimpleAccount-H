@@ -12,6 +12,7 @@
 	<artifactId>simpleaccount</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>simpleaccount</name>
+	<packaging>jar</packaging>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -114,12 +115,13 @@
 				<excludes>
 					<exclude>**/*.java</exclude>
 				</excludes>
+				<includes>
+					<include>**/*.xml</include>
+					<include>**/*.yml</include>
+				</includes>
 			</resource>
 			<resource>
-				<directory>src/main/resources</directory>
-				<excludes>
-					<exclude>**.*</exclude>
-				</excludes>
+				<directory>src/main/resources/*.*</directory>
 			</resource>
 		</resources>
 	</build>
