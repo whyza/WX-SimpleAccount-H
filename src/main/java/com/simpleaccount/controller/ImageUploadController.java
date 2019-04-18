@@ -22,11 +22,6 @@ import java.util.UUID;
  */
 @Controller
 public class ImageUploadController {
-    @RequestMapping("/img")
-    public String upload() {
-        return "/upload";
-    }
-
     /**
      * 文件上传类
      * 文件会自动绑定到MultipartFile中

@@ -15,7 +15,7 @@ import org.springframework.cache.annotation.EnableCaching;
  * @auther: LS
  * @date: 2019/3/8 19:57
  */
-@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
+@SpringBootApplication()
 @EnableCaching
 @MapperScan("com.simpleaccount.mapper")
 public class SimpleaccountApplication {
