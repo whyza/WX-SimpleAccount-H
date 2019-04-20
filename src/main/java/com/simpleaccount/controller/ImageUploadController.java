@@ -1,7 +1,9 @@
 package com.simpleaccount.controller;
 
 import com.simpleaccount.util.imagesutil.FtpUtil;
+import com.simpleaccount.util.imagesutil.QiniuFileUploadUtil;
 import com.simpleaccount.util.resultutil.ResultUtil;
+import com.simpleaccount.util.tokenUtil.CreatToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -31,7 +33,6 @@ public class ImageUploadController {
      * @throws IOException
      * @throws IllegalStateException
      */
-    @PostMapping("/upload")
     @ResponseBody
     @RequestMapping("/upload")
     public ResultUtil uploadImg(@RequestParam("file") MultipartFile file) throws IOException {
@@ -45,4 +46,9 @@ public class ImageUploadController {
         return new ResultUtil(msg, filePath);
     }
 
+    @ResponseBody
+    @RequestMapping("/getToken")
+    public ResultUtil getToken(){
+        return new ResultUtil("",QiniuFileUploadUtil.getUpToken());
+    }
 }
