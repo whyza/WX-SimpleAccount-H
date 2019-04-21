@@ -1,4 +1,5 @@
 package com.simpleaccount.entry;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -9,11 +10,12 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Billclassify implements Serializable {
-  private long classify;
-  private String classfyName;
-  private long fClassfyId;
-  private Date createtime;
-  private Date updatetime;
-  private String classifyImage;
+public class Billclassify {
+    private Integer classfyId;
+    private long classify;
+    private String classfyName;
+    private long fClassfyId;
+    private Date createtime;
+    private Date updatetime;
+    private String classifyImage;
 }

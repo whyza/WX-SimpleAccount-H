@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.simpleaccount.mapper.BillClassfyMapper">
+
+    <resultMap id="billClassfyMap" type="BillClassfyTree">
+        <id property="classify" column="classify"></id>
+        <result property="classfyId" column="classfyId"></result>
+        <result property="classfyName" column="classfyName"></result>
+        <result property="fClassfyId" column="fClassfyId"></result>
+        <result property="classifyImage" column="classifyImage"></result>
+        <collection property="ChildrenBillClassfy" ofType="BillClassfyTree" javaType="java.util.List" column="classfyId"
+                    select="queryBigBillClassfy"/>
+    </resultMap>
+    <select id="queryBigBillClassfy" resultType="java.lang.Integer" resultMap="billClassfyMap">
+        SELECT b.classfyId,b.classfyName,b.classifyImage,b.fClassfyId,b.createtime,b.updatetime FROM billclassify as b WHERE b.fClassfyId = #{classfyId}
+    </select>
+    <!--查找所有类别(递归)-->
+    <select id="queryAllBillClassfy" resultMap="billClassfyMap">
+        SELECT b.classfyId,b.classfyName,b.classifyImage,b.fClassfyId,b.createtime,b.updatetime
+        FROM billclassify as b
+        WHERE 1 = 1 AND b.fClassfyId IS NULL
+    </select>
+
+</mapper>
