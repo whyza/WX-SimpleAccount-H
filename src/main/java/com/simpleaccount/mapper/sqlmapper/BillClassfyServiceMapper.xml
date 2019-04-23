@@ -10,17 +10,20 @@
         <result property="classfyName" column="classfyName"></result>
         <result property="fClassfyId" column="fClassfyId"></result>
         <result property="classifyImage" column="classifyImage"></result>
-        <collection property="ChildrenBillClassfy" ofType="BillClassfyTree" javaType="java.util.List" column="classfyId"
-                    select="queryBigBillClassfy"/>
+        <!--<collection property="ChildrenBillClassfy" ofType="BillClassfyTree" javaType="java.util.List" column="{classfyId=classfyId,userId=userId}"-->
+        <!--select="queryBigBillClassfy"/>-->
     </resultMap>
-    <select id="queryBigBillClassfy" resultType="java.lang.Integer" resultMap="billClassfyMap">
-        SELECT b.classfyId,b.classfyName,b.classifyImage,b.fClassfyId,b.createtime,b.updatetime FROM billclassify as b WHERE b.fClassfyId = #{classfyId}
-    </select>
-    <!--查找所有类别(递归)-->
-    <select id="queryAllBillClassfy" resultMap="billClassfyMap">
+    <select id="queryBigBillClassfy"  resultMap="billClassfyMap">
         SELECT b.classfyId,b.classfyName,b.classifyImage,b.fClassfyId,b.createtime,b.updatetime
         FROM billclassify as b
-        WHERE 1 = 1 AND b.fClassfyId IS NULL
+        WHERE b.fClassfyId IS NULL
+  </select>
+    <!--查找所有类别(递归)-->
+    <select id="queryAllBillClassfy" resultType="com.simpleaccount.entry.Billclassify" parameterType="java.lang.Integer">
+        SELECT b.classfyId,b.classfyName,b.classifyImage,b.fClassfyId,b.createtime,b.updatetime
+        FROM billclassify as b
+        WHERE b.fClassfyId = #{classfyId}
+        AND (b.userId = 0 or b.userId= #{userId})
     </select>
 
 </mapper>

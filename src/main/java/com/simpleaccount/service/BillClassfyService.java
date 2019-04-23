@@ -13,8 +13,14 @@ import java.util.List;
  */
 public interface BillClassfyService {
     /**
-     * 查询所有一级分类
+     * 查询所有二级分类
      * @return
      */
-    List<BillClassfyTree> queryAllBillClassfy();
+    List<BillClassfyTree> queryAllBillClassfy(Integer userId);
+//
+//    /**
+//     * 查询所有一级分类
+//     * @return
+//     */
+//    List<Integer> queryBigBillClassfy();
 }

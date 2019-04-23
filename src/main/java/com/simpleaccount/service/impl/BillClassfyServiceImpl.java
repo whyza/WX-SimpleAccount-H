@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -19,14 +20,31 @@ import java.util.List;
 public class BillClassfyServiceImpl implements BillClassfyService {
     @Autowired
     BillClassfyMapper billTypeMapper;
+//    /**
+//     * 查询所有分类  tree
+//     *
+//     * @return
+//     */
+//    @Override
+//    @Cacheable(value = "billClassfyTree")
+//    public List<BillClassfyTree> queryAllBillClassfy(Integer userId) {
+//        return billTypeMapper.queryAllBillClassfy(userId);
+//    }
+
+
     /**
-     * 查询所有一级分类
+     * 查询所有分类  tree
      *
      * @return
      */
     @Override
     @Cacheable(value = "billClassfyTree")
-    public List<BillClassfyTree> queryAllBillClassfy() {
-        return billTypeMapper.queryAllBillClassfy();
+    public List<BillClassfyTree> queryAllBillClassfy(Integer userId) {
+        List<BillClassfyTree> billList = billTypeMapper.queryBigBillClassfy();
+        for (BillClassfyTree btree :billList) {
+            btree.setChildrenBillClassfy(billTypeMapper.queryAllBillClassfy(btree.getClassfyId(),userId));
+        }
+        return billList;
     }
+
 }

@@ -18,4 +18,5 @@ public class Billclassify {
     private Date createtime;
     private Date updatetime;
     private String classifyImage;
+    private Integer userId;
 }

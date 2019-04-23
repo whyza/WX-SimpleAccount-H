@@ -25,5 +25,5 @@ public class BillClassfyTree implements Serializable {
     private Date createtime;
     private Date updatetime;
     private String classifyImage;
-    private List<BillClassfyTree> ChildrenBillClassfy;
+    private List<Billclassify> ChildrenBillClassfy;
 }

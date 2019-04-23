@@ -1,11 +1,11 @@
 --- # 端口
-server:
-  port: 8443
-  ssl:
-    key-store: classpath:2087746_iazuresky.com.pfx
-    key-store-password: JSjkmCp8
 #server:
-#  port: 8081
+#  port: 8443
+#  ssl:
+#    key-store: classpath:2087746_iazuresky.com.pfx
+#    key-store-password: JSjkmCp8
+server:
+  port: 8081
 --- #数据源配置
 spring:
   datasource:

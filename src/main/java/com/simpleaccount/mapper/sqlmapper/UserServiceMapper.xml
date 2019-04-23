@@ -11,8 +11,8 @@
         SELECT * FROM user_info where userName = #{userName} and password = #{password}
     </select>
     <insert id="userRegister" parameterType="com.simpleaccount.entry.UserInfo">
-        insert into user_info (userName,avatarUrl,country,province,city,gender,language,createTime, openId)
-        values (#{userName}, #{avatarUrl},#{country},#{province},#{city},#{gender},#{language},#{createTime},#{openId})
+        insert into user_info (userName,avatarUrl,country,province,city,gender,language,createTime, openId,password)
+        values (#{userName}, #{avatarUrl},#{country},#{province},#{city},#{gender},#{language},#{createTime},#{openId},#{password})
     </insert>
     <select id="queryUserInfoByName" resultType="com.simpleaccount.entry.UserInfo" resultMap="userMapper">
         SELECT * FROM user_info where  userName = #{userName}

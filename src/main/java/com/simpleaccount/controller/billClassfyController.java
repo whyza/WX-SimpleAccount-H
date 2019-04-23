@@ -19,7 +19,7 @@ public class billClassfyController {
     @Autowired
     BillClassfyService BillTypeService;
     @RequestMapping("/queryAllBillClassfy")
-    public List<BillClassfyTree> queryAllBillClassfy(){
-        return BillTypeService.queryAllBillClassfy();
+    public List<BillClassfyTree> queryAllBillClassfy(Integer userId){
+        return BillTypeService.queryAllBillClassfy(userId);
     }
 }
