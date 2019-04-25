@@ -94,7 +94,6 @@ public class UserServiceImpl implements UserService {
      * @return
      */
     @Override
-    @Cacheable(value = "userIsExit")
     public UserInfo isExitUserByOpenId(String openId) {
         return userServiceMapper.isExitUserByOpenId(openId);
     }

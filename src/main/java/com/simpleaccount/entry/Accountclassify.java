@@ -10,9 +10,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Accountclassify implements Serializable {
-  private long accountClassifyId;
+  private Long accountClassifyId;
   private String accountClassifyName;
-  private long faccountClassifyId;
+  private Long faccountClassifyId;
   private Date createtime;
   private Date updatetime;
 }

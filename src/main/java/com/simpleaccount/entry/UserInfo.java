@@ -12,15 +12,15 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserInfo implements Serializable {
-    private long userId;
+    private Long userId;
     private String userName;
     private String avatarUrl;
     private String country;
     private String province;
     private String city;
-    private long gender;
+    private Long gender;
     private String language;
-    private long roleId;
+    private Long roleId;
     private Date createTime;
     private Date updateTime;
     private String code;

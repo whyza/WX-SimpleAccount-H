@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Roles implements Serializable {
-  private long roleId;
+  private Long roleId;
   private String roleName;
   private Date createTime;
   private Date updateTime;

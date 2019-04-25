@@ -10,11 +10,11 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Billclassify {
+public class Billclassify implements Serializable{
     private Integer classfyId;
-    private long classify;
+    private Long classify;
     private String classfyName;
-    private long fClassfyId;
+    private Long fClassfyId;
     private Date createtime;
     private Date updatetime;
     private String classifyImage;

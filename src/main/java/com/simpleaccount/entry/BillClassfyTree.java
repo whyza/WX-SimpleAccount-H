@@ -17,11 +17,11 @@ public class BillClassfyTree implements Serializable {
 
     private Integer classfyId;
     //主键自增ID
-    private long classify;
+    private Long classify;
     //分类名
     private String classfyName;
     //父分类Id
-    private long fClassfyId;
+    private Long fClassfyId;
     private Date createtime;
     private Date updatetime;
     private String classifyImage;

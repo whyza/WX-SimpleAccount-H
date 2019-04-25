@@ -10,8 +10,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Suggestandback implements Serializable {
-  private long suggestId;
-  private long suggestType;
+  private Long suggestId;
+  private Long suggestType;
   private String suggestContent;
   private Date createtime;
   private Date updatetime;

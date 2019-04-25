@@ -32,7 +32,8 @@ logging:
 spring:
   redis:
     host: 193.112.11.253
-    port: 6379
+    port: 6479
+    password: Ls892903912
   servlet:
     multipart:
       max-file-size: 500KB

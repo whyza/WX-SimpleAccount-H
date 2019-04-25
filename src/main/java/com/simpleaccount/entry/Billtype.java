@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Billtype implements Serializable {
-  private long billTypeId;
+  private Long billTypeId;
   private String billTypeName;
   private Date createtime;
   private Date updatetime;

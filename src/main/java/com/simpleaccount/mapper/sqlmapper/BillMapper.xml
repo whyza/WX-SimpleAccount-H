@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 
+	namespace：命名空间，其值为某一个dao层类的具体路径
+ -->
+
+<mapper namespace="com.simpleaccount.mapper.BillMapper">
+    <insert id="addBill" useGeneratedKeys="true" keyProperty="billid" parameterType="com.simpleaccount.entry.Bill">
+        INSERT INTO bill (userId,billMoney,accountClassifyId,accountTypeId,classify,date,address,remarks)
+        VALUES (#{userId},#{billMoney},#{accountClassifyId},#{accountTypeId},#{classify},#{date},#{address},#{remarks})
+    </insert>
+    <insert id="addBillImage">
+        INSERT INTO bill_images (imageUrl,billid)
+        VALUES (#{imageUrl},#{billId})
+    </insert>
+</mapper>
