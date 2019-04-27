@@ -26,6 +26,7 @@ public class Bill implements Serializable {
   private String remarks;
   private String[] images;
   private Date createtime;
+  private List<BillImages> billImages;
   private Date updatetime;
   private Long accountTypeIdEd;
 }

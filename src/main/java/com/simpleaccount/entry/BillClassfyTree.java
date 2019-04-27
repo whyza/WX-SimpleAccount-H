@@ -15,9 +15,9 @@ import java.util.List;
 @Data
 public class BillClassfyTree implements Serializable {
 
-    private Integer classfyId;
+//    private Integer classfyId;
     //主键自增ID
-    private Long classify;
+    private Integer classify;
     //分类名
     private String classfyName;
     //父分类Id

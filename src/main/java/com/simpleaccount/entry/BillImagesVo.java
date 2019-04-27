@@ -2,17 +2,13 @@ package com.simpleaccount.entry;
 
 import lombok.Data;
 
-import java.io.Serializable;
-
 /**
  * @Description: java类作用描述
  * @Author: Whyza
- * @CreateDate: 2019/4/25 13:17
+ * @CreateDate: 2019/4/25 19:44
  * @Version: 1.0
  */
 @Data
-public class BillImages implements Serializable {
-    private Long imageId;
+public class BillImagesVo {
     private String imageUrl;
-    private Long billId;
 }
