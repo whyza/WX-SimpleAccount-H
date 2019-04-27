@@ -16,7 +16,7 @@ public interface BillClassfyService {
      * 查询所有二级分类
      * @return
      */
-    List<BillClassfyTree> queryAllBillClassfy(Integer userId);
+    List<BillClassfyTree> queryAllBillClassfy(Integer userId,Integer classifyType);
 //
 //    /**
 //     * 查询所有一级分类

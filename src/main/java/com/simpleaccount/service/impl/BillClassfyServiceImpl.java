@@ -39,10 +39,10 @@ public class BillClassfyServiceImpl implements BillClassfyService {
      */
     @Override
     @Cacheable(value = "billClassfyTree")
-    public List<BillClassfyTree> queryAllBillClassfy(Integer userId) {
-        List<BillClassfyTree> billList = billTypeMapper.queryBigBillClassfy();
+    public List<BillClassfyTree> queryAllBillClassfy(Integer userId,Integer classifyType) {
+        List<BillClassfyTree> billList = billTypeMapper.queryBigBillClassfy(classifyType);
         for (BillClassfyTree btree :billList) {
-            btree.setChildrenBillClassfy(billTypeMapper.queryAllBillClassfy(btree.getClassfyId(),userId));
+            btree.setChildrenBillClassfy(billTypeMapper.queryAllBillClassfy(btree.getClassify(),userId,classifyType));
         }
         return billList;
     }

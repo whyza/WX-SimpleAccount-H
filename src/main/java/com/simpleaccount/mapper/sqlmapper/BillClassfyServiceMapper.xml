@@ -6,7 +6,6 @@
 
     <resultMap id="billClassfyMap" type="BillClassfyTree">
         <id property="classify" column="classify"></id>
-        <result property="classfyId" column="classfyId"></result>
         <result property="classfyName" column="classfyName"></result>
         <result property="fClassfyId" column="fClassfyId"></result>
         <result property="classifyImage" column="classifyImage"></result>
@@ -14,16 +13,18 @@
         <!--select="queryBigBillClassfy"/>-->
     </resultMap>
     <select id="queryBigBillClassfy"  resultMap="billClassfyMap">
-        SELECT b.classfyId,b.classfyName,b.classifyImage,b.fClassfyId,b.createtime,b.updatetime
+        SELECT b.classify,b.classfyName,b.classifyImage,b.fClassfyId,b.createtime,b.updatetime
         FROM billclassify as b
         WHERE b.fClassfyId IS NULL
+        AND b.classifyType = #{classifyType}
   </select>
     <!--查找所有类别(递归)-->
     <select id="queryAllBillClassfy" resultType="com.simpleaccount.entry.Billclassify" parameterType="java.lang.Integer">
-        SELECT b.classfyId,b.classfyName,b.classifyImage,b.fClassfyId,b.createtime,b.updatetime
+        SELECT b.classify,b.classfyName,b.classifyImage,b.fClassfyId,b.createtime,b.updatetime
         FROM billclassify as b
         WHERE b.fClassfyId = #{classfyId}
         AND (b.userId = 0 or b.userId= #{userId})
+        AND b.classifyType = #{classifyType}
     </select>
 
 </mapper>

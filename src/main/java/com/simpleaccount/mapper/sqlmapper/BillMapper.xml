@@ -7,6 +7,45 @@
  -->
 
 <mapper namespace="com.simpleaccount.mapper.BillMapper">
+
+
+    <resultMap id="dateBills" type="com.simpleaccount.entry.DateBills">
+        <id column="" property=""></id>
+    </resultMap>
+
+    <resultMap type="com.simpleaccount.entry.DateBills" id="dateBillsMapper">
+        <id column="date" property="date"/>
+        <collection property="dateBills" ofType="com.simpleaccount.entry.BillVo">
+            <id column="billid" property="billid"/>
+            <result column="billMoney" property="billMoney"/>
+            <result column="remarks" property="remarks"/>
+            <result column="accountTypeId" property="accountTypeId"/>
+            <result column="classfyName" property="classfyName"/>
+            <result column="classifyImage" property="classifyImage"/>
+            <result column="createtime" property="createtime"/>
+            <collection property="billImages" ofType="com.simpleaccount.entry.BillImagesVo">
+                <result column="imageUrl" property="imageUrl"/>
+            </collection>
+        </collection>
+    </resultMap>
+    <select id="selectBillByDateAndUid" resultMap="dateBillsMapper">
+		select
+        b2.date,
+        b1.billid,
+        b1.remarks,
+        b1.billMoney,
+        b1.accountTypeId,
+        b1.createtime,
+        bi.imageUrl,
+        b3.classfyName,
+        b3.classifyImage
+		from bill as b1
+		right JOIN (select distinct b.date from bill as b where year(date)=#{year} AND month(date)=#{month}  And b.userId = #{userId} order by b.date desc) as b2
+        on b2.date = b1.date and b1.userId = #{userId}
+        left join bill_images as bi on  bi.billId = b1.billid
+        left join billclassify b3 on b1.classify = b3.classify
+        ORDER BY b2.date desc,b1.createtime desc
+    </select>
     <insert id="addBill" useGeneratedKeys="true" keyProperty="billid" parameterType="com.simpleaccount.entry.Bill">
         INSERT INTO bill (userId,billMoney,accountClassifyId,accountTypeId,classify,date,address,remarks)
         VALUES (#{userId},#{billMoney},#{accountClassifyId},#{accountTypeId},#{classify},#{date},#{address},#{remarks})
@@ -15,4 +54,8 @@
         INSERT INTO bill_images (imageUrl,billid)
         VALUES (#{imageUrl},#{billId})
     </insert>
+    <delete id="deleteBillById">
+        DELETE FROM bill_images  WHERE billid = #{billId};
+        DELETE FROM bill  WHERE billid = #{billId}
+    </delete>
 </mapper>
