@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @Description: java类作用描述
+ * @Description: 自定义异常
  * @Author: Whyza
  * @CreateDate: 2019/3/22 11:14
  * @Version: 1.0
