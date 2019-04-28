@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.google.gson.JsonArray;
 import com.simpleaccount.entry.Bill;
+import com.simpleaccount.entry.BillDetailsVo;
 import com.simpleaccount.entry.DateBills;
 import com.simpleaccount.mapper.BillMapper;
 import com.simpleaccount.service.BillService;
@@ -65,5 +66,10 @@ public class BillServiceImpl implements BillService {
     @Override
     public boolean deleteBillById(Long billId) {
         return billMaper.deleteBillById(billId);
+    }
+
+    @Override
+    public BillDetailsVo queryBillDetailsById(Long billId,Long userId) {
+        return billMaper.queryBillDetailsById(billId,userId);
     }
 }

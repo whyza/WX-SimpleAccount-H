@@ -7,12 +7,6 @@
  -->
 
 <mapper namespace="com.simpleaccount.mapper.BillMapper">
-
-
-    <resultMap id="dateBills" type="com.simpleaccount.entry.DateBills">
-        <id column="" property=""></id>
-    </resultMap>
-
     <resultMap type="com.simpleaccount.entry.DateBills" id="dateBillsMapper">
         <id column="date" property="date"/>
         <collection property="dateBills" ofType="com.simpleaccount.entry.BillVo">
@@ -28,6 +22,25 @@
             </collection>
         </collection>
     </resultMap>
+
+    <resultMap type="com.simpleaccount.entry.BillDetailsVo" id="billDetailsMap">
+        <id column="billid" property="billid"/>
+        <result column="billMoney" property="billMoney"/>
+        <result column="remarks" property="remarks"/>
+        <result column="accountTypeId" property="accountTypeId"/>
+        <result column="classify" property="classify"/>
+        <result column="classfyName" property="classfyName"/>
+        <result column="classifyImage" property="classifyImage"/>
+        <result column="createtime" property="createtime"/>
+        <result column="date" property="date"/>
+        <result column="accountClassifyId" property="accountClassifyId"/>
+        <result column="accountClassifyName" property="accountClassifyName"/>
+        <result column="address" property="address"/>
+        <collection property="billImages" ofType="java.lang.String">
+            <result column="imageUrl" property="imageUrl"/>
+        </collection>
+    </resultMap>
+
     <select id="selectBillByDateAndUid" resultMap="dateBillsMapper">
 		select
         b2.date,
@@ -58,4 +71,38 @@
         DELETE FROM bill_images  WHERE billid = #{billId};
         DELETE FROM bill  WHERE billid = #{billId}
     </delete>
+    <select id="queryBillDetailsById" parameterType="java.lang.Long" resultMap="billDetailsMap">
+          SELECT * FROM bill as b
+          LEFT JOIN bill_images as bi ON bi.billid = b.billid
+          LEFT JOIN billclassify as bc ON bc.classify = b.classify
+          LEFT JOIN accountclassify as ac ON ac.accountClassifyId = b.accountClassifyId
+          where  b.billid = #{billId} and b.userId = #{userId}
+    </select>
+    <update id="updateBill" parameterType="com.simpleaccount.entry.Bill">
+        update bill as b
+        <set>
+            <if test="billMoney != null">
+                billMoney=#{billMoney},
+            </if>
+            <if test="accountClassifyId != null">
+                accountClassifyId=#{accountClassifyId},
+            </if>
+            <if test="classify != null">
+                classify=#{classify}
+            </if>
+            <if test="date != null">
+                date=#{date}
+            </if>
+            <if test="address != null">
+                address=#{address}
+            </if>
+            <if test="updatetime != null">
+                updatetime=#{updatetime}
+            </if>
+            <if test="accountTypeIdEd != null">
+                accountTypeIdEd=#{accountTypeIdEd}
+            </if>
+        </set>
+        where
+    </update>
 </mapper>

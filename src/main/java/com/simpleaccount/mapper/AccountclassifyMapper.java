@@ -15,6 +15,7 @@ public interface AccountclassifyMapper {
     /**
      * 根据id查询账户信息
      * @param fAccountclassifyId
+     * @param userId
      * @return
      */
     List<Accountclassify> queryAllAccClassifyInfoByfId(@Param(value="fAccountclassifyId")Integer fAccountclassifyId, @Param(value = "userId") Integer userId);

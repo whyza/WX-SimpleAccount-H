@@ -1,15 +1,13 @@
 package com.simpleaccount.controller;
 
 import com.simpleaccount.entry.Bill;
+import com.simpleaccount.entry.BillDetailsVo;
 import com.simpleaccount.entry.DateBills;
 import com.simpleaccount.service.BillService;
 import com.simpleaccount.util.resultutil.ResultUtil;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -58,5 +56,10 @@ public class BillController {
             flag = false;
         }
         return new ResultUtil(msg,flag);
+    }
+    @ResponseBody
+    @PostMapping("/queryBillDetailsById")
+    public ResultUtil queryBillDetailsById(Long billId,Long userId){
+        return new ResultUtil("",billService.queryBillDetailsById(billId,userId));
     }
  }

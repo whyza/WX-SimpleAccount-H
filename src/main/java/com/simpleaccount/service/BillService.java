@@ -1,6 +1,7 @@
 package com.simpleaccount.service;
 
 import com.simpleaccount.entry.Bill;
+import com.simpleaccount.entry.BillDetailsVo;
 import com.simpleaccount.entry.DateBills;
 import com.simpleaccount.util.resultutil.ResultUtil;
 import org.apache.ibatis.annotations.Param;
@@ -36,4 +37,6 @@ public interface BillService {
      * @return
      */
     boolean deleteBillById(Long billId);
+
+    BillDetailsVo queryBillDetailsById(Long billId,Long userId);
 }

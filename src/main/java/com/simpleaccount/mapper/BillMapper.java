@@ -1,6 +1,7 @@
 package com.simpleaccount.mapper;
 
 import com.simpleaccount.entry.Bill;
+import com.simpleaccount.entry.BillDetailsVo;
 import com.simpleaccount.entry.DateBills;
 import io.swagger.models.auth.In;
 import org.apache.ibatis.annotations.Param;
@@ -44,4 +45,11 @@ public interface BillMapper{
      * @return
      */
     boolean deleteBillById(@Param(value = "billId")Long billId);
+
+    /**
+     * 根据billid查询bill信息
+     * @param billId
+     * @return
+     */
+    BillDetailsVo queryBillDetailsById(@Param(value = "billId")Long billId,@Param(value = "userId")Long userId);
 }

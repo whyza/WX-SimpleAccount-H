@@ -2,7 +2,6 @@ package com.simpleaccount.entry;
 
 import lombok.Data;
 
-import java.sql.Date;
 import java.util.List;
 
 /**

@@ -10,6 +10,8 @@ import com.google.gson.JsonArray;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.apache.commons.net.ntp.TimeStamp;
+import org.springframework.format.annotation.DateTimeFormat;
 
 @Data
 @NoArgsConstructor
@@ -25,8 +27,8 @@ public class Bill implements Serializable {
   private String address;
   private String remarks;
   private String[] images;
-  private Date createtime;
+  private java.util.Date createtime;
   private List<BillImages> billImages;
-  private Date updatetime;
+  private java.util.Date updatetime;
   private Long accountTypeIdEd;
 }

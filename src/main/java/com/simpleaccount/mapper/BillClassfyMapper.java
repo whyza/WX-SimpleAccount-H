@@ -2,6 +2,7 @@ package com.simpleaccount.mapper;
 
 import com.simpleaccount.entry.BillClassfyTree;
 import com.simpleaccount.entry.Billclassify;
+import io.swagger.models.auth.In;
 import org.apache.ibatis.annotations.Param;
 import org.hibernate.validator.constraints.URL;
 
@@ -18,11 +19,11 @@ public interface BillClassfyMapper {
      * 查询所有二级分类
      * @return
      */
-    List<Billclassify>  queryAllBillClassfy(@Param(value = "classfyId") Integer classfyId, @Param(value = "userId") Integer userId);
+    List<Billclassify>  queryAllBillClassfy(@Param(value = "classfyId") Integer classfyId, @Param(value = "userId") Integer userId, @Param(value = "classifyType")Integer classifyType);
 
     /**
      * 查询所有一级分类
      * @return
      */
-    List<BillClassfyTree> queryBigBillClassfy();
+    List<BillClassfyTree> queryBigBillClassfy(@Param(value = "classifyType")Integer classifyType);
 }

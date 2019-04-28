@@ -5,6 +5,7 @@ import com.simpleaccount.service.AccountclassifyService;
 import com.simpleaccount.util.resultutil.ResultUtil;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @CreateDate: 2019/4/25 7:58
  * @Version: 1.0
  */
-@RestController
+@Controller
 public class AccountclassifyController {
     @Autowired
     AccountclassifyService accountclassifyService;
