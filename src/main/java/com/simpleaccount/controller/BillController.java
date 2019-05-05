@@ -1,8 +1,6 @@
 package com.simpleaccount.controller;
 
-import com.simpleaccount.entry.Bill;
-import com.simpleaccount.entry.BillDetailsVo;
-import com.simpleaccount.entry.DateBills;
+import com.simpleaccount.entry.*;
 import com.simpleaccount.service.BillService;
 import com.simpleaccount.util.resultutil.ResultUtil;
 import io.swagger.annotations.ApiOperation;
@@ -62,4 +60,17 @@ public class BillController {
     public ResultUtil queryBillDetailsById(Long billId,Long userId){
         return new ResultUtil("",billService.queryBillDetailsById(billId,userId));
     }
- }
+
+    @ResponseBody
+    @PostMapping("/updateBill")
+    public ResultUtil updateBill(@RequestBody Bill bill){
+        return new ResultUtil("",billService.updateBill(bill));
+    }
+
+
+    @ResponseBody
+    @GetMapping("/queryWeekBill")
+    public List<BillWeekVo> queryWeekBill(Long userId){
+        return billService.queryWeekBill(userId);
+    }
+}

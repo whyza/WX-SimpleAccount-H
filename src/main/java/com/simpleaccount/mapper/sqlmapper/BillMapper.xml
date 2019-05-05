@@ -71,6 +71,9 @@
         DELETE FROM bill_images  WHERE billid = #{billId};
         DELETE FROM bill  WHERE billid = #{billId}
     </delete>
+    <delete id="deleteBillImagesById">
+        DELETE FROM bill_images  WHERE billid = #{billId}
+    </delete>
     <select id="queryBillDetailsById" parameterType="java.lang.Long" resultMap="billDetailsMap">
           SELECT * FROM bill as b
           LEFT JOIN bill_images as bi ON bi.billid = b.billid
@@ -79,8 +82,8 @@
           where  b.billid = #{billId} and b.userId = #{userId}
     </select>
     <update id="updateBill" parameterType="com.simpleaccount.entry.Bill">
-        update bill as b
-        <set>
+        update bill
+        <trim prefix="set" suffixOverrides=",">
             <if test="billMoney != null">
                 billMoney=#{billMoney},
             </if>
@@ -88,21 +91,38 @@
                 accountClassifyId=#{accountClassifyId},
             </if>
             <if test="classify != null">
-                classify=#{classify}
+                classify=#{classify},
             </if>
             <if test="date != null">
-                date=#{date}
+                date=#{date},
             </if>
             <if test="address != null">
-                address=#{address}
+                address=#{address},
+            </if>
+            <if test="remarks != null">
+                remarks=#{remarks},
             </if>
             <if test="updatetime != null">
-                updatetime=#{updatetime}
+                updatetime=#{updatetime},
             </if>
             <if test="accountTypeIdEd != null">
-                accountTypeIdEd=#{accountTypeIdEd}
+                accountTypeIdEd=#{accountTypeIdEd},
             </if>
-        </set>
-        where
+        </trim>
+        WHERE billid=#{billid}
     </update>
+    <select id="queryWeekBill" resultType="com.simpleaccount.entry.BillWeekVo" parameterType="Long">
+        SELECT c.classfyName as name,sum(b.billMoney) as nummber,1 as a
+        FROM bill as b
+        LEFT JOIN billclassify as c ON c.classify = b.classify
+        WHERE YEARWEEK(date_format(date,'%Y-%m-%d'),1) = YEARWEEK(now(),1) and b.userId = #{userId} and b.accountTypeId =0
+        GROUP BY b.classify
+    </select>
+    <select id="queryWeekBillForLine" resultType="com.simpleaccount.entry.BillWeekLineVo" parameterType="Long">
+        SELECT b.date,sum(b.billMoney) as billMoney
+        FROM bill as b
+        LEFT JOIN billclassify as c ON c.classify = b.classify
+        WHERE YEARWEEK(date_format(date-1,'%Y-%m-%d')) = YEARWEEK(now()) and b.userId = #{userId} and b.accountTypeId =0
+        GROUP BY b.date
+    </select>
 </mapper>

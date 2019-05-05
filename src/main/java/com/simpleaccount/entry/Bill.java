@@ -1,5 +1,6 @@
 package com.simpleaccount.entry;
 import java.io.Serializable;
+import java.sql.Timestamp;
 import java.util.Date;
 import java.util.List;
 
@@ -29,6 +30,6 @@ public class Bill implements Serializable {
   private String[] images;
   private java.util.Date createtime;
   private List<BillImages> billImages;
-  private java.util.Date updatetime;
+  private Timestamp updatetime;
   private Long accountTypeIdEd;
 }

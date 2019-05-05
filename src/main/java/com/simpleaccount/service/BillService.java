@@ -2,6 +2,7 @@ package com.simpleaccount.service;
 
 import com.simpleaccount.entry.Bill;
 import com.simpleaccount.entry.BillDetailsVo;
+import com.simpleaccount.entry.BillWeekVo;
 import com.simpleaccount.entry.DateBills;
 import com.simpleaccount.util.resultutil.ResultUtil;
 import org.apache.ibatis.annotations.Param;
@@ -38,5 +39,34 @@ public interface BillService {
      */
     boolean deleteBillById(Long billId);
 
+    /**
+     * 查询billdetail通过id
+     * @param billId
+     * @param userId
+     * @return
+     */
     BillDetailsVo queryBillDetailsById(Long billId,Long userId);
+    /**
+     * 更新bill
+     * @param bill
+     * @return
+     */
+    ResultUtil updateBill(Bill bill);
+
+    /**
+     * 根据id删除关联图片
+     * @param billId
+     * @return
+     */
+    boolean deleteBillImagesById(@Param(value = "billId")Long billId);
+
+    boolean addImages(String[] images,Long billId);
+
+
+    /**
+     * 根据用户id查询用户本周消费分类和金额
+     * @param userId
+     * @return
+     */
+    List<BillWeekVo> queryWeekBill(Long userId);
 }

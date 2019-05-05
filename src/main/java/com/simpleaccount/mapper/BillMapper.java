@@ -2,6 +2,7 @@ package com.simpleaccount.mapper;
 
 import com.simpleaccount.entry.Bill;
 import com.simpleaccount.entry.BillDetailsVo;
+import com.simpleaccount.entry.BillWeekVo;
 import com.simpleaccount.entry.DateBills;
 import io.swagger.models.auth.In;
 import org.apache.ibatis.annotations.Param;
@@ -52,4 +53,26 @@ public interface BillMapper{
      * @return
      */
     BillDetailsVo queryBillDetailsById(@Param(value = "billId")Long billId,@Param(value = "userId")Long userId);
+
+    /**
+     * 更新bill
+     * @param bill
+     * @return
+     */
+    int updateBill(Bill bill);
+
+    /**
+     * 根据id删除关联图片
+     * @param billId
+     * @return
+     */
+    int deleteBillImagesById(@Param(value = "billId")Long billId);
+
+
+    /**
+     * 根据用户id查询用户本周消费分类和金额
+     * @param userId
+     * @return
+     */
+    List<BillWeekVo> queryWeekBill(@Param(value = "userId")Long userId);
 }
