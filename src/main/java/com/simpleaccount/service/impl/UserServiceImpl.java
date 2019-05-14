@@ -1,5 +1,7 @@
 package com.simpleaccount.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.simpleaccount.entry.UserInfo;
 import com.simpleaccount.expction.CommonException;
 import com.simpleaccount.mapper.UserServiceMapper;
@@ -26,8 +28,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Cacheable(value = "userList")
-    public List<UserInfo> queryUserInfo() {
-        return userServiceMapper.queryUserInfo();
+    public PageInfo<UserInfo> queryUserInfo(Integer pageNum, Integer pageSize) {
+        PageHelper.startPage(pageNum, pageSize);
+        List<UserInfo> list = userServiceMapper.queryUserInfo();
+        PageInfo<UserInfo> pageInfo = new PageInfo<UserInfo>(list);
+        return pageInfo;
     }
 
     /**
@@ -37,11 +42,11 @@ public class UserServiceImpl implements UserService {
      * @return
      */
     @Override
-    @Cacheable(cacheNames = "user",key = "#userName")
+    @Cacheable(cacheNames = "user", key = "#userName")
     public UserInfo queryUserInfoByName(String userName) {
-        UserInfo userInfo  = userServiceMapper.queryUserInfoByName(userName);
+        UserInfo userInfo = userServiceMapper.queryUserInfoByName(userName);
         if (userInfo == null) {
-            throw new CommonException(400,"用户不存在，请重新登录");
+            throw new CommonException(400, "用户不存在，请重新登录");
         }
         return userInfo;
     }
@@ -66,13 +71,14 @@ public class UserServiceImpl implements UserService {
             return false;
         }
     }
+
     /**
      * 用户注册
      *
      * @return
      */
     @Override
-    @CacheEvict(value="userList",allEntries=true)
+    @CacheEvict(value = "userList", allEntries = true)
     public boolean userRegister(UserInfo userInfo) {
         if (userInfo != null) {
             // 将密码加盐

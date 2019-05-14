@@ -1,6 +1,8 @@
 package com.simpleaccount.service;
 
 import com.simpleaccount.entry.Accountclassify;
+import com.simpleaccount.entry.Budget;
+import com.simpleaccount.entry.BudgetVo;
 
 import java.util.List;
 
@@ -12,5 +14,6 @@ import java.util.List;
  */
 public interface AccountclassifyService {
     List<Accountclassify> queryAllAccClassifyInfoByfId(Integer fAccountclassifyId,Integer userId);
-
+    List<BudgetVo> queryAllBudgetVo(Integer fAccountclassifyId, Integer userId);
+    List<Budget> queryAllTwoAccountClassify(Integer fAccountclassifyId, Integer userId);
 }

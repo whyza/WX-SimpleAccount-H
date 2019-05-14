@@ -1,6 +1,7 @@
 package com.simpleaccount.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.github.pagehelper.PageInfo;
 import com.simpleaccount.configuration.AuthCode2Session;
 import com.simpleaccount.entry.UserInfo;
 import com.simpleaccount.service.UserService;
@@ -41,13 +42,7 @@ public class UserController {
     @Autowired
     CreatToken creatToken;
 
-    @ApiOperation(value = "获取用户信息", notes = "获取用户信息note")
-    @RequestMapping("queryUser")
-    @ResponseBody
-    public ResultUtil queryUser() {
-        //LogFileUtil.getAllFile("log",false);
-        return new ResultUtil("请求成功", userService.queryUserInfo());
-    }
+
 
     @ApiOperation(value = "用户注册", notes = "用户注册")
     @RequestMapping("userRegister")
@@ -111,6 +106,7 @@ public class UserController {
     public ResultUtil queryUserInfoByName(String userName) {
         return new ResultUtil("请求成功", userService.queryUserInfoByName(userName));
     }
+
     @ApiOperation(value = "根据用户openId查询用户信息", notes = "根据用户openId查询用户信息")
     @RequestMapping("queryUserInfoByOpenId")
     @ResponseBody

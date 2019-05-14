@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Billclassify implements Serializable{
 //    private Integer classfyId;
+    private String icon;
     private Long classify;
     private String classfyName;
     private Long fClassfyId;

@@ -9,7 +9,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 
 /**
- * @Description: java类作用描述
+ * @Description: WebMvcConfigurer
  * @Author: Whyza
  * @CreateDate: 2019/3/22 11:54
  * @Version: 1.0

@@ -6,12 +6,6 @@
 	namespace：命名空间，其值为某一个dao层类的具体路径
  -->
 <mapper namespace="com.simpleaccount.mapper.AccountclassifyMapper">
-    <!-- sql语句保存在Mybatis的局部配置文件中 -->
-    <!-- 
-		select标签存放查询语句(List<User>)
-			id:在整个配置文件中id值必须唯一，其值与dao层类中的方法名保持一致
-			resultType：指定当前sql查询语句返回的数据类型。类型不是为sql语句的最终类型，而是某一条数据的类型
-	 -->
     <select id="queryAllAccClassifyInfoByfId" resultType="com.simpleaccount.entry.Accountclassify">
         SELECT * FROM accountclassify as a
         <where>
@@ -25,5 +19,30 @@
                 AND (a.userId = 0 or a.userId = #{userId}) AND a.faccountClassifyId = #{fAccountclassifyId}
             </if>
         </where>
+    </select>
+
+    <select id="queryAllBudgetVo" resultType="com.simpleaccount.entry.BudgetVo">
+        SELECT * FROM accountclassify as a
+        <where>
+            <if test="((userId == null or userId == '')  and (fAccountclassifyId == null or fAccountclassifyId == '')) or ((userId != null and userId != '')  and (fAccountclassifyId == null or fAccountclassifyId == ''))">
+                AND a.faccountClassifyId is null
+            </if>
+            <if test="(userId == null or userId == '')  and (fAccountclassifyId != null and fAccountclassifyId != '')">
+                AND a.faccountClassifyId = #{fAccountclassifyId} AND a.userId = 0
+            </if>
+            <if test="(userId != null and userId != '')  and (fAccountclassifyId != null and fAccountclassifyId != '')">
+                AND (a.userId = 0 or a.userId = #{userId}) AND a.faccountClassifyId = #{fAccountclassifyId}
+            </if>
+        </where>
+    </select>
+
+    <select id="queryAllBigAccountClassify" resultType="com.simpleaccount.entry.Accountclassify">
+       select a.accountClassifyId,a.accountClassifyName from accountclassify as a WHERE a.faccountClassifyId is NULL  and (a.userId = #{userId} or a.userId=0)
+    </select>
+
+    <select id="queryAllTwoAccountClassify" resultType="com.simpleaccount.entry.Budget">
+      select * from accountclassify as a
+--       LEFT JOIN budget as b ON a.accountClassifyId = b.accountClassifyId
+      WHERE a.faccountClassifyId = #{fAccountclassifyId}  and (a.userId = #{userId} or a.userId=0)
     </select>
 </mapper>

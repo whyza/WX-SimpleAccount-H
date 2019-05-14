@@ -13,4 +13,6 @@ public class BillWeekVo {
     private String name;
     private Double nummber;
     private String a;
+    private Integer nums;
+    private String icon;
 }

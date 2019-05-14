@@ -1,7 +1,7 @@
 package com.simpleaccount.configuration;
 
 /**
- * @Description: java类作用描述
+ * @Description: AuthCode2Session
  * @Author: Whyza
  * @CreateDate: 2019/4/11 12:56
  * @Version: 1.0

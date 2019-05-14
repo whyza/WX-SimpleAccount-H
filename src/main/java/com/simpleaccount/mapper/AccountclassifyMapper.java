@@ -1,6 +1,8 @@
 package com.simpleaccount.mapper;
 
 import com.simpleaccount.entry.Accountclassify;
+import com.simpleaccount.entry.Budget;
+import com.simpleaccount.entry.BudgetVo;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -19,4 +21,7 @@ public interface AccountclassifyMapper {
      * @return
      */
     List<Accountclassify> queryAllAccClassifyInfoByfId(@Param(value="fAccountclassifyId")Integer fAccountclassifyId, @Param(value = "userId") Integer userId);
+    List<BudgetVo> queryAllBudgetVo(@Param(value="fAccountclassifyId")Integer fAccountclassifyId, @Param(value = "userId") Integer userId);
+    List<Budget> queryAllTwoAccountClassify(@Param(value="fAccountclassifyId")Integer fAccountclassifyId, @Param(value = "userId") Integer userId);
+
 }

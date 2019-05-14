@@ -1,5 +1,6 @@
 package com.simpleaccount.service;
 
+import com.github.pagehelper.PageInfo;
 import com.simpleaccount.entry.UserInfo;
 import com.simpleaccount.util.resultutil.ResultUtil;
 import org.springframework.stereotype.Service;
@@ -17,7 +18,7 @@ public interface UserService {
      * 查询所有用户信息
      * @return
      */
-    List<UserInfo> queryUserInfo();
+    PageInfo<UserInfo> queryUserInfo(Integer pageNum, Integer pageSize);
     /**
      * 根据用户名查询用户信息
      * @param userName

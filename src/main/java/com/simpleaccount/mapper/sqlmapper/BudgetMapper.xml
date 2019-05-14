@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.simpleaccount.mapper.BudgetMapper">
+    <select id="queryUserSumForMonth" resultType="Double">
+        SELECT SUM(b.billMoney) as budgetNummber  FROM bill as b
+        WHERE DATE_FORMAT( b.date, '%Y%m' ) = DATE_FORMAT( CURDATE( ) , '%Y%m' )
+        and b.userId = #{userId}
+        AND b.accountClassifyId = #{accountClassifyId} and b.accountTypeId = 0 GROUP BY userId
+    </select>
+    <select id="queryUserBudget" resultType="Double">
+      SELECT b.budgetNummber from budget as b where b.accountClassifyId = #{accountClassifyId} and b.userId = #{userId}
+    </select>
+</mapper>

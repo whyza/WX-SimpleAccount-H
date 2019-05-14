@@ -30,6 +30,7 @@ public class BillDetailsVo implements Serializable {
     private List<String> billImages;
     private java.util.Date   updatetime;
     private Long accountTypeIdEd;
+    private String icon;
     /**
      * 账单分类属性
      */

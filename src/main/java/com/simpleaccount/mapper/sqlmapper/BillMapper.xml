@@ -15,7 +15,7 @@
             <result column="remarks" property="remarks"/>
             <result column="accountTypeId" property="accountTypeId"/>
             <result column="classfyName" property="classfyName"/>
-            <result column="classifyImage" property="classifyImage"/>
+            <result column="icon" property="icon"/>
             <result column="createtime" property="createtime"/>
             <collection property="billImages" ofType="com.simpleaccount.entry.BillImagesVo">
                 <result column="imageUrl" property="imageUrl"/>
@@ -36,6 +36,7 @@
         <result column="accountClassifyId" property="accountClassifyId"/>
         <result column="accountClassifyName" property="accountClassifyName"/>
         <result column="address" property="address"/>
+        <result column="icon" property="icon"/>
         <collection property="billImages" ofType="java.lang.String">
             <result column="imageUrl" property="imageUrl"/>
         </collection>
@@ -51,7 +52,7 @@
         b1.createtime,
         bi.imageUrl,
         b3.classfyName,
-        b3.classifyImage
+        b3.icon
 		from bill as b1
 		right JOIN (select distinct b.date from bill as b where year(date)=#{year} AND month(date)=#{month}  And b.userId = #{userId} order by b.date desc) as b2
         on b2.date = b1.date and b1.userId = #{userId}
@@ -112,7 +113,7 @@
         WHERE billid=#{billid}
     </update>
     <select id="queryWeekBill" resultType="com.simpleaccount.entry.BillWeekVo" parameterType="Long">
-        SELECT c.classfyName as name,sum(b.billMoney) as nummber,1 as a
+        SELECT c.classfyName as name,sum(b.billMoney) as nummber,1 as a,count(*) as nums,c.icon
         FROM bill as b
         LEFT JOIN billclassify as c ON c.classify = b.classify
         WHERE YEARWEEK(date_format(date,'%Y-%m-%d'),1) = YEARWEEK(now(),1) and b.userId = #{userId} and b.accountTypeId =0

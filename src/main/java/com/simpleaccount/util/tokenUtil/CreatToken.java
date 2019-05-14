@@ -33,8 +33,8 @@ public class CreatToken {
     public static final int calendarInterval = 10;
 
     /**
-     * JWT生成Token.<br/>
-     * <p>
+     * JWT生成Token
+     *
      * JWT构成: header, payload, signature
      *
      * @param userInfo

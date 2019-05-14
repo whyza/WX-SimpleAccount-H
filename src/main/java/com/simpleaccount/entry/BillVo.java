@@ -12,6 +12,7 @@ import java.util.List;
  */
 @Data
 public class BillVo {
+    private String icon;
     private Long billid;
     private Double billMoney;
     private String remarks;

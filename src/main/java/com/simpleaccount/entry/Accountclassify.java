@@ -15,4 +15,5 @@ public class Accountclassify implements Serializable {
   private Long faccountClassifyId;
   private Date createtime;
   private Date updatetime;
+  private String icon;
 }

@@ -20,11 +20,24 @@
   </select>
     <!--查找所有类别(递归)-->
     <select id="queryAllBillClassfy" resultType="com.simpleaccount.entry.Billclassify" parameterType="java.lang.Integer">
-        SELECT b.classify,b.classfyName,b.classifyImage,b.fClassfyId,b.createtime,b.updatetime
+        SELECT b.classify,b.classfyName,b.classifyImage,b.fClassfyId,b.createtime,b.updatetime,b.icon
         FROM billclassify as b
         WHERE b.fClassfyId = #{classfyId}
         AND (b.userId = 0 or b.userId= #{userId})
         AND b.classifyType = #{classifyType}
     </select>
-
+    <select id="queryAllTwoClassify" resultType="com.simpleaccount.entry.Billclassify" parameterType="java.lang.Integer">
+        SELECT b.classify,b.classfyName,b.classifyImage,b.fClassfyId,b.createtime,b.updatetime,b.icon
+        FROM billclassify as b
+        WHERE b.fClassfyId IS NOT NULL
+        AND (b.userId = 0 or b.userId= #{userId})
+        AND b.classifyType = #{classifyType}
+    </select>
+    <select id="queryAdminClassify" resultType="com.simpleaccount.entry.Billclassify" parameterType="java.lang.Integer">
+        SELECT b.classify,b.classfyName,b.classifyImage,b.fClassfyId,b.createtime,b.updatetime,b.icon
+        FROM billclassify as b
+        WHERE b.fClassfyId = #{classfyId}
+        AND b.classifyType = #{classifyType}
+        and b.userId = 0
+    </select>
 </mapper>

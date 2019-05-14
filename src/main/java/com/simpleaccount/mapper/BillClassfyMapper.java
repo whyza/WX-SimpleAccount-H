@@ -26,4 +26,21 @@ public interface BillClassfyMapper {
      * @return
      */
     List<BillClassfyTree> queryBigBillClassfy(@Param(value = "classifyType")Integer classifyType);
+
+
+    /**
+     * 查询所有二级分类
+     * @param userId
+     * @param classifyType
+     * @return
+     */
+    List<Billclassify> queryAllTwoClassify(@Param(value = "userId")Integer userId,@Param(value = "classifyType")Integer classifyType);
+
+    /**
+     * 管理员分类查询
+     * @param classfyId
+     * @param classifyType
+     * @return
+     */
+    List<Billclassify> queryAdminClassify(@Param(value = "classfyId")Integer classfyId,@Param(value = "classifyType")Integer classifyType);
 }
