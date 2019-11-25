@@ -10,9 +10,9 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://193.112.11.253:3306/simpleaccount?characterEncoding=utf8&serverTimezone=GMT%2B8&allowMultiQueries=true&autoReconnect=true
+    url: jdbc:mysql://127.0.0.1:3306/simpleaccount?characterEncoding=utf8&serverTimezone=GMT%2B8&allowMultiQueries=true&autoReconnect=true
     username: simpleaccount
-    password: zaq123
+    password: root
 --- #mybatis配置
 mybatis:
   mapper-locations:
@@ -33,7 +33,7 @@ spring:
   redis:
     host: 193.112.11.253
     port: 6479
-    password: Ls892903912
+    password: root
 logging.path:
   ./target/logs
 weblogPath:
