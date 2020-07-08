@@ -2,16 +2,16 @@ package com.simpleaccount.controller;
 
 import com.github.pagehelper.PageInfo;
 import com.simpleaccount.entry.BillClassfyTree;
+import com.simpleaccount.entry.Billclassify;
 import com.simpleaccount.entry.UserInfo;
 import com.simpleaccount.service.BillClassfyService;
 import com.simpleaccount.service.UserService;
+import com.simpleaccount.util.resultutil.ResultUtil;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import javax.xml.transform.Result;
 import java.util.List;
 
 /**
@@ -26,7 +26,7 @@ public class AdminController {
     UserService userService;
     @Autowired
     BillClassfyService BillTypeService;
-    //    queryAdminClassify
+
     @ApiOperation(value = "获取用户信息", notes = "获取用户信息note")
     @RequestMapping("queryUser")
     @ResponseBody
@@ -41,5 +41,13 @@ public class AdminController {
     @ResponseBody
     public List<BillClassfyTree> queryAdminClassify(Integer classifyType) {
         return BillTypeService.queryAdminClassify(classifyType);
+    }
+
+
+    @ApiOperation(value = "更新账单分类", notes = "更新账单分类")
+    @PostMapping("updateBillClassify")
+    @ResponseBody
+    public ResultUtil updateBillClassify(@RequestBody Billclassify billclassify) {
+        return BillTypeService.updateBillClassify(billclassify);
     }
 }

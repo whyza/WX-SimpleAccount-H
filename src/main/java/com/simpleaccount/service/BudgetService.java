@@ -24,5 +24,23 @@ public interface BudgetService {
      * @return
      */
     Double queryUserBudget(Integer accountClassifyId,Integer userId);
+    /**
+     * 设置用户预算信息
+     * @param budget
+     * @return
+     */
+    Boolean setUserBudget(Budget budget);
 
+    /**
+     * 更新用户预算信息
+     * @param budget
+     * @return
+     */
+    Boolean updateUserBudget(Budget budget);
+    /**
+     * 查询用户月消费
+     * @param userId
+     * @return
+     */
+    Double selectSumForMonth(Integer userId);
 }

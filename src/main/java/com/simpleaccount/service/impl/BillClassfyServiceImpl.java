@@ -2,13 +2,16 @@ package com.simpleaccount.service.impl;
 
 import com.simpleaccount.entry.BillClassfyTree;
 import com.simpleaccount.entry.Billclassify;
+import com.simpleaccount.expction.CommonException;
 import com.simpleaccount.mapper.BillClassfyMapper;
 import com.simpleaccount.service.BillClassfyService;
+import com.simpleaccount.util.resultutil.ResultUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -21,16 +24,6 @@ import java.util.List;
 public class BillClassfyServiceImpl implements BillClassfyService {
     @Autowired
     BillClassfyMapper billTypeMapper;
-//    /**
-//     * 查询所有分类  tree
-//     *
-//     * @return
-//     */
-//    @Override
-//    @Cacheable(value = "billClassfyTree")
-//    public List<BillClassfyTree> queryAllBillClassfy(Integer userId) {
-//        return billTypeMapper.queryAllBillClassfy(userId);
-//    }
 
 
     /**
@@ -40,13 +33,33 @@ public class BillClassfyServiceImpl implements BillClassfyService {
      */
     @Override
     @Cacheable(value = "billClassfyTree")
-    public List<BillClassfyTree> queryAllBillClassfy(Integer userId,Integer classifyType) {
+    public List<BillClassfyTree> queryAllBillClassfy(Integer userId, Integer classifyType) {
         List<BillClassfyTree> billList = billTypeMapper.queryBigBillClassfy(classifyType);
-        for (BillClassfyTree btree :billList) {
-            btree.setChildrenBillClassfy(billTypeMapper.queryAllBillClassfy(btree.getClassify(),userId,classifyType));
+        for (BillClassfyTree btree : billList) {
+            btree.setChildren(billTypeMapper.queryAllBillClassfy(btree.getClassify(), userId, classifyType));
         }
         return billList;
     }
+
+    /**
+     * 查询所有一级分类
+     *
+     * @return
+     */
+    @Override
+    public List<BillClassfyTree> queryBigBillClassfy(Integer classifyType) {
+        return billTypeMapper.queryBigBillClassfy(classifyType);
+    }
+
+    /**
+     * 查询所有一级分类
+     *
+     * @return
+     */
+//    @Override
+//    public List<Billclassify> queryBigBillClassfy(Integer classifyType) {
+//        return billTypeMapper.queryBigBillClassfy(classifyType);
+//    }
 
     /**
      * 查询所有二级分类
@@ -58,7 +71,7 @@ public class BillClassfyServiceImpl implements BillClassfyService {
     @Override
     public List<List<Billclassify>> queryAllTwoClassify(Integer userId, Integer classifyType) {
         List<List<Billclassify>> listArr = new ArrayList<List<Billclassify>>();
-        List<Billclassify> list = billTypeMapper.queryAllTwoClassify(userId,classifyType);
+        List<Billclassify> list = billTypeMapper.queryAllTwoClassify(userId, classifyType);
         //获取被拆分的数组个数
         int arrSize = list.size() % 10 == 0 ? list.size() / 10 : list.size() / 10 + 1;
         for (int i = 0; i < arrSize; i++) {
@@ -75,17 +88,40 @@ public class BillClassfyServiceImpl implements BillClassfyService {
         Billclassify billc = new Billclassify();
         billc.setIcon("iconbianji");
         billc.setClassfyName("添加分类");
-        listArr.get(listArr.size()-1).add(billc);
+        listArr.get(listArr.size() - 1).add(billc);
         return listArr;
     }
 
     @Override
     public List<BillClassfyTree> queryAdminClassify(Integer classifyType) {
         List<BillClassfyTree> billList = billTypeMapper.queryBigBillClassfy(classifyType);
-        for (BillClassfyTree btree :billList) {
-            btree.setChildrenBillClassfy(billTypeMapper.queryAdminClassify(btree.getClassify(),classifyType));
+        for (BillClassfyTree btree : billList) {
+            btree.setChildren(billTypeMapper.queryAdminClassify(btree.getClassify(), classifyType));
         }
         return billList;
+    }
+
+    @Override
+    public ResultUtil updateBillClassify(Billclassify billclassify) {
+        boolean flag = false;
+        String msg = "更新成功";
+        int code = 200;
+        try{
+            billclassify.setUpdatetime(new Date());
+            flag = billTypeMapper.updateBillClassify(billclassify)>0;
+        }catch (Exception e){
+            code = 500;
+            msg = "更新失败";
+            throw new CommonException(code,msg);
+        }
+        return new ResultUtil(msg,code);
+    }
+
+    @Override
+    public Boolean AddClassify(Billclassify billclassify) {
+        billclassify.setCreatetime(new Date());
+        billclassify.setFClassfyId(new Long(0));
+        return billTypeMapper.AddClassify(billclassify)>0;
     }
 
 }

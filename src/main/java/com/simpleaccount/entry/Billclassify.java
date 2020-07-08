@@ -3,21 +3,25 @@ package com.simpleaccount.entry;
 import java.io.Serializable;
 import java.util.Date;
 
-import lombok.AllArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-
+/**
+ *
+ * @Description: 账单分类
+ * @auther: LS
+ * @date: 2019/4/23 10:33
+ */
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class Billclassify implements Serializable{
-//    private Integer classfyId;
+public class Billclassify implements Serializable {
+    private Long fClassfyId;
     private String icon;
     private Long classify;
     private String classfyName;
-    private Long fClassfyId;
+    @JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")
     private Date createtime;
+    @JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")
     private Date updatetime;
     private String classifyImage;
     private Integer userId;
+    private Integer classifyType;
 }

@@ -12,4 +12,16 @@
     <select id="queryUserBudget" resultType="Double">
       SELECT b.budgetNummber from budget as b where b.accountClassifyId = #{accountClassifyId} and b.userId = #{userId}
     </select>
+    <insert id="setUserBudget">
+        INSERT INTO budget (accountClassifyId, userId, budgetNummber) values (#{accountClassifyId},#{userId},#{budgetNummber})
+    </insert>
+    <update id="updateUserBudget">
+      update  budget as b set b.userId = #{userId},b.budgetNummber=#{budgetNummber} where b.accountClassifyId = #{accountClassifyId}
+    </update>
+    <select id="selectSumForMonth" resultType="Double">
+        SELECT SUM(b.billMoney) as budgetNummber  FROM bill as b
+        WHERE DATE_FORMAT( b.date, '%Y%m' ) = DATE_FORMAT( CURDATE( ) , '%Y%m' )
+        and b.userId = #{userId}
+        AND  b.accountTypeId = 0 GROUP BY userId
+    </select>
 </mapper>

@@ -42,4 +42,37 @@ public class BudgetServiceImpl implements BudgetService {
     public Double queryUserBudget(Integer accountClassifyId, Integer userId) {
         return budgetMapper.queryUserBudget(accountClassifyId,userId);
     }
+
+    /**
+     * 设置用户预算信息
+     *
+     * @param budget
+     * @return
+     */
+    @Override
+    public Boolean setUserBudget(Budget budget) {
+        return budgetMapper.setUserBudget(budget)>0;
+    }
+
+    /**
+     * 更新用户预算信息
+     *
+     * @param budget
+     * @return
+     */
+    @Override
+    public Boolean updateUserBudget(Budget budget) {
+        return budgetMapper.updateUserBudget(budget)>0;
+    }
+
+    /**
+     * 查询用户月消费
+     *
+     * @param userId
+     * @return
+     */
+    @Override
+    public Double selectSumForMonth(Integer userId) {
+        return budgetMapper.selectSumForMonth(userId);
+    }
 }

@@ -2,6 +2,7 @@ package com.simpleaccount.service;
 
 import com.simpleaccount.entry.BillClassfyTree;
 import com.simpleaccount.entry.Billclassify;
+import com.simpleaccount.util.resultutil.ResultUtil;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -18,12 +19,12 @@ public interface BillClassfyService {
      * @return
      */
     List<BillClassfyTree> queryAllBillClassfy(Integer userId,Integer classifyType);
-//
-//    /**
-//     * 查询所有一级分类
-//     * @return
-//     */
-//    List<Integer> queryBigBillClassfy();
+
+    /**
+     * 查询所有一级分类
+     * @return
+     */
+    List<BillClassfyTree> queryBigBillClassfy(Integer classifyType);
 
 
     /**
@@ -36,4 +37,12 @@ public interface BillClassfyService {
 
 
     List<BillClassfyTree> queryAdminClassify(Integer classifyType);
+
+    /**
+     * 更新账单分类
+     * @param billclassify
+     * @return
+     */
+    ResultUtil updateBillClassify(Billclassify billclassify);
+    Boolean AddClassify(Billclassify billclassify);
 }

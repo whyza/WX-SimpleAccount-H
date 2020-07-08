@@ -13,7 +13,7 @@
         <!--select="queryBigBillClassfy"/>-->
     </resultMap>
     <select id="queryBigBillClassfy"  resultMap="billClassfyMap">
-        SELECT b.classify,b.classfyName,b.classifyImage,b.fClassfyId,b.createtime,b.updatetime
+        SELECT b.classify,b.classfyName,b.classifyImage,b.fClassfyId,b.createtime,b.updatetime,b.icon
         FROM billclassify as b
         WHERE b.fClassfyId IS NULL
         AND b.classifyType = #{classifyType}
@@ -40,4 +40,62 @@
         AND b.classifyType = #{classifyType}
         and b.userId = 0
     </select>
+    <update id="updateBillClassify" parameterType="com.simpleaccount.entry.Billclassify">
+        update billclassify as b
+        <trim prefix="set" suffixOverrides=",">
+            <if test="userId != null">
+                userId=#{userId},
+            </if>
+            <if test="classfyName != null">
+                classfyName=#{classfyName},
+            </if>
+            <if test="fClassfyId != null">
+                fClassfyId=#{fClassfyId},
+            </if>
+            <if test="updatetime != null">
+                updatetime=#{updatetime},
+            </if>
+            <if test="icon != null">
+                icon=#{icon},
+            </if>
+        </trim>
+        where b.classify = #{classify}
+    </update>
+    <insert id="AddClassify" parameterType="com.simpleaccount.entry.Billclassify">
+        INSERT into billclassify
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                userId,
+            </if>
+            <if test="classfyName != null">
+                classfyName,
+            </if>
+            <if test="fClassfyId != null">
+                fClassfyId,
+            </if>
+            <if test="classifyType != null">
+                classifyType,
+            </if>
+            <if test="icon != null">
+                icon,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                #{userId},
+            </if>
+            <if test="classfyName != null">
+                #{classfyName},
+            </if>
+            <if test="fClassfyId != null">
+                #{fClassfyId},
+            </if>
+            <if test="classifyType != null">
+                #{classifyType},
+            </if>
+            <if test="icon != null">
+                #{icon},
+            </if>
+        </trim>
+    </insert>
 </mapper>

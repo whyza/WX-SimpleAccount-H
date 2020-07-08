@@ -1,5 +1,6 @@
 package com.simpleaccount.entry;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -22,8 +23,11 @@ public class BillClassfyTree implements Serializable {
     private String classfyName;
     //父分类Id
     private Long fClassfyId;
+    @JsonFormat(pattern="yyyy-MM-dd",timezone = "GMT+8")
     private Date createtime;
+    @JsonFormat(pattern="yyyy-MM-dd",timezone = "GMT+8")
     private Date updatetime;
     private String classifyImage;
-    private List<Billclassify> ChildrenBillClassfy;
+    private String icon;
+    private List<Billclassify> children;
 }

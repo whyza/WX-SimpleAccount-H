@@ -25,5 +25,24 @@ public interface BudgetMapper {
      */
     Double queryUserBudget(@Param(value = "accountClassifyId")Integer accountClassifyId,@Param(value = "userId")Integer userId);
 
+    /**
+     * 设置用户预算信息
+     * @param budget
+     * @return
+     */
+    int setUserBudget(Budget budget);
 
+    /**
+     * 更新用户预算信息
+     * @param budget
+     * @return
+     */
+    int updateUserBudget(Budget budget);
+
+    /**
+     * 查询用户月消费
+     * @param userId
+     * @return
+     */
+    Double selectSumForMonth(Integer userId);
 }
