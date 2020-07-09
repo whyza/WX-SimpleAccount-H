@@ -4,9 +4,8 @@ import com.simpleaccount.entry.*;
 import com.simpleaccount.service.BillService;
 import com.simpleaccount.util.resultutil.ResultUtil;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -17,11 +16,11 @@ import java.util.List;
  */
 @RestController
 public class BillController {
-    @Autowired
+    @Resource
     BillService billService;
 
     @ApiOperation(value = "新增账单", notes = "新增账单")
-    @RequestMapping("addBill")
+    @RequestMapping(value = "addBill",method = {RequestMethod.GET,RequestMethod.POST})
     @ResponseBody
     public ResultUtil addBill(@RequestBody Bill bill) {
         if (bill.getAccountClassifyId() == null) {
@@ -36,15 +35,15 @@ public class BillController {
     }
     @ApiOperation(value = "通过年月，uid查询账单信息", notes = "通过年月，uid查询账单信息")
     @ResponseBody
-    @RequestMapping("/selectBillByDateAndUid")
+    @RequestMapping(value = "/selectBillByDateAndUid",method = {RequestMethod.GET,RequestMethod.POST})
     public List<DateBills> selectBillByDateAndUid(String year,String month,Integer userId){
         return billService.selectBillByDateAndUid(year,month,userId);
     }
 
-    @ApiOperation(value = "通过年月，uid查询账单信息", notes = "通过年月，uid查询账单信息")
+    @ApiOperation(value = "通过年月，uid删除账单信息", notes = "通过年月，uid删除账单信息")
     @ResponseBody
-    @RequestMapping("/deleteBillById")
-    public ResultUtil deleteBillById(Long billId){
+    @RequestMapping(value = "/deleteBillById",method = {RequestMethod.DELETE,RequestMethod.GET,RequestMethod.POST})
+    public ResultUtil<Boolean> deleteBillById(Long billId){
         String msg = "删除成功";
         boolean flag = true;
         try{
@@ -53,18 +52,18 @@ public class BillController {
             msg = "删除失败，请稍后重试!";
             flag = false;
         }
-        return new ResultUtil(msg,flag);
+        return new ResultUtil<>(msg,flag);
     }
     @ResponseBody
     @PostMapping("/queryBillDetailsById")
-    public ResultUtil queryBillDetailsById(Long billId,Long userId){
-        return new ResultUtil("",billService.queryBillDetailsById(billId,userId));
+    public ResultUtil<BillDetailsVo> queryBillDetailsById(Long billId, Long userId){
+        return new ResultUtil<>("",billService.queryBillDetailsById(billId,userId));
     }
 
     @ResponseBody
     @PostMapping("/updateBill")
-    public ResultUtil updateBill(@RequestBody Bill bill){
-        return new ResultUtil("",billService.updateBill(bill));
+    public ResultUtil<ResultUtil> updateBill(@RequestBody Bill bill){
+        return new ResultUtil<>("",billService.updateBill(bill));
     }
 
 

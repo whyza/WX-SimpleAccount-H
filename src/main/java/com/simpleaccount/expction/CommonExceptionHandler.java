@@ -25,8 +25,8 @@ public class CommonExceptionHandler {
      * @return
      */
     @ExceptionHandler(value = Exception.class)
-    public Map errorHandler(HttpServletRequest req,Exception ex) {
-        Map map = new HashMap();
+    public Map<String, Object> errorHandler(HttpServletRequest req, Exception ex) {
+        Map<String, Object> map = new HashMap<>();
         map.put("code", 500);
         map.put("message", ex.getMessage());
         map.put("url", req.getRequestURL());
@@ -41,8 +41,8 @@ public class CommonExceptionHandler {
      * @return
      */
     @ExceptionHandler(value = CommonException.class)
-    public Map myErrorHandler(HttpServletRequest req, CommonException ex) {
-        Map map = new HashMap();
+    public Map<String, Object> myErrorHandler(HttpServletRequest req, CommonException ex) {
+        Map<String, Object> map = new HashMap<>();
         map.put("code", ex.getCode());
         map.put("message", ex.getMessage());
         map.put("url", req.getRequestURL());

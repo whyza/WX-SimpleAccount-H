@@ -1,15 +1,14 @@
 package com.simpleaccount.controller;
 
-import com.simpleaccount.entry.Bill;
 import com.simpleaccount.entry.BillClassfyTree;
 import com.simpleaccount.entry.Billclassify;
 import com.simpleaccount.service.BillClassfyService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import com.simpleaccount.util.IconUtil;
-
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,22 +20,22 @@ import java.util.List;
  */
 @RestController
 public class BillClassfyController {
-    @Autowired
+    @Resource
     BillClassfyService BillTypeService;
-    @RequestMapping("/queryAllBillClassfy")
+    @RequestMapping(value = "/queryAllBillClassfy",method = {RequestMethod.GET,RequestMethod.POST})
     public List<BillClassfyTree> queryAllBillClassfy(Integer userId,Integer classifyType){
         return BillTypeService.queryAllBillClassfy(userId,classifyType);
     }
-    @RequestMapping("/queryAllTwoClassify")
+    @RequestMapping(value = "/queryAllTwoClassify",method = {RequestMethod.GET,RequestMethod.POST})
     public List<List<Billclassify>> queryAllTwoClassify(Integer userId,Integer classifyType){
         return BillTypeService.queryAllTwoClassify(userId,classifyType);
     }
-    @RequestMapping("/queryBigBillClassfy")
+    @RequestMapping(value = "/queryBigBillClassfy",method = {RequestMethod.GET,RequestMethod.POST})
     public List<BillClassfyTree> queryBigBillClassfy(Integer classifyType){
         return BillTypeService.queryBigBillClassfy(classifyType);
     }
 
-    @RequestMapping("/getIcon")
+    @RequestMapping(value = "/getIcon",method = {RequestMethod.GET,RequestMethod.POST})
     public List<List<String>>  getIcon( ){
         if(IconUtil.icon == null || IconUtil.icon.size() == 0){
             IconUtil.addIcon();
@@ -59,7 +58,7 @@ public class BillClassfyController {
         return listArr;
     }
 
-    @RequestMapping("/addClassify")
+    @RequestMapping(value = "/addClassify",method = {RequestMethod.GET,RequestMethod.POST})
     public Boolean addClassify(@RequestBody Billclassify billclassify){
         return BillTypeService.AddClassify(billclassify);
     }

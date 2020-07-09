@@ -8,10 +8,8 @@ import com.simpleaccount.service.BillClassfyService;
 import com.simpleaccount.service.UserService;
 import com.simpleaccount.util.resultutil.ResultUtil;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import javax.xml.transform.Result;
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -22,13 +20,13 @@ import java.util.List;
  */
 @RestController
 public class AdminController {
-    @Autowired
+    @Resource
     UserService userService;
-    @Autowired
+    @Resource
     BillClassfyService BillTypeService;
 
     @ApiOperation(value = "获取用户信息", notes = "获取用户信息note")
-    @RequestMapping("queryUser")
+    @RequestMapping(value = "queryUser",method = {RequestMethod.GET,RequestMethod.POST})
     @ResponseBody
     public PageInfo<UserInfo> queryUser(@RequestParam(value = "pageNum", defaultValue = "1") int pageNum,
                                         @RequestParam(value = "pageSize", defaultValue = "5") int pageSize) {
@@ -37,7 +35,7 @@ public class AdminController {
 
 
     @ApiOperation(value = "获取分类信息", notes = "获取分类信息")
-    @RequestMapping("queryAdminClassify")
+    @RequestMapping(value = "queryAdminClassify",method = {RequestMethod.GET,RequestMethod.POST})
     @ResponseBody
     public List<BillClassfyTree> queryAdminClassify(Integer classifyType) {
         return BillTypeService.queryAdminClassify(classifyType);

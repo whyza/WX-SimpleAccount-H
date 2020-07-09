@@ -16,7 +16,7 @@ import java.util.List;
 @Mapper
 public interface UserServiceMapper {
     /**
-     * chaxun
+     * 查询
      * @return
      */
     List<UserInfo> queryUserInfo();

@@ -1,7 +1,6 @@
 package com.simpleaccount.controller;
 
 import com.alibaba.fastjson.JSONObject;
-import com.github.pagehelper.PageInfo;
 import com.simpleaccount.configuration.AuthCode2Session;
 import com.simpleaccount.entry.UserInfo;
 import com.simpleaccount.service.UserService;
@@ -12,16 +11,12 @@ import com.simpleaccount.util.tokenUtil.CreatToken;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
-import java.util.Date;
+import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -34,29 +29,29 @@ import java.util.Map;
 @Controller
 @EnableAutoConfiguration
 public class UserController {
-    @Autowired
+    @Resource
     RedisTemplate redisTemplate;
     private final static Logger logger = LoggerFactory.getLogger(UserController.class);
-    @Autowired
+    @Resource
     UserService userService;
-    @Autowired
+    @Resource
     CreatToken creatToken;
 
 
 
     @ApiOperation(value = "用户注册", notes = "用户注册")
-    @RequestMapping("userRegister")
+    @RequestMapping(value = "userRegister",method = {RequestMethod.GET,RequestMethod.POST})
     @ResponseBody
-    public ResultUtil userRegister(@RequestBody UserInfo userInfo) {
-        return new ResultUtil("注册成功", userService.userRegister(userInfo));
+    public ResultUtil<Boolean> userRegister(@RequestBody UserInfo userInfo) {
+        return new ResultUtil<>("注册成功", userService.userRegister(userInfo));
     }
 
     @ApiOperation(value = "用户登陆", notes = "用户登陆")
-    @RequestMapping("userLogin")
+    @RequestMapping(value = "userLogin",method = {RequestMethod.GET,RequestMethod.POST})
     @ResponseBody
-    public ResultUtil userLogin(@RequestBody UserInfo userInfo) {
+    public ResultUtil<HashMap<String, Object>> userLogin(@RequestBody UserInfo userInfo) {
         HashMap<String, Object> map = new HashMap<>();
-        String msg = "";
+        String msg;
         map.put("status", userService.userLogin(userInfo));
         if (userService.userLogin(userInfo)) {
             msg = "登陆成功";
@@ -64,13 +59,13 @@ public class UserController {
         } else {
             msg = "用户名或密码错误";
         }
-        return new ResultUtil(msg, map);
+        return new ResultUtil<>(msg, map);
     }
 
     @ApiOperation(value = "微信用户授权登陆", notes = "微信用户授权登陆")
-    @RequestMapping("userLoginByWeChat")
+    @RequestMapping(value = "userLoginByWeChat",method = {RequestMethod.GET,RequestMethod.POST})
     @ResponseBody
-    public ResultUtil userLoginByWeChat(@RequestBody UserInfo userInfo) {
+    public ResultUtil<Map<String, String>> userLoginByWeChat(@RequestBody UserInfo userInfo) {
         // 配置请求参数
         Map<String, String> param = new HashMap<>();
         param.put("appid", AuthCode2Session.WX_LOGIN_APPID);
@@ -95,24 +90,22 @@ public class UserController {
         result.put("session_key", session_key);
         result.put("open_id", open_id);
         result.put("token", creatToken.createToken(userInfo));
-        return new ResultUtil("", result);
+        return new ResultUtil<>("", result);
     }
 
 
     @ApiOperation(value = "根据用户名查询用户信息", notes = "根据用户名查询用户信息")
-    @RequestMapping("queryUserInfoByName")
+    @RequestMapping(value = "queryUserInfoByName",method = {RequestMethod.GET,RequestMethod.POST})
     @ResponseBody
     @UserLoginToken
-    public ResultUtil queryUserInfoByName(String userName) {
-        return new ResultUtil("请求成功", userService.queryUserInfoByName(userName));
+    public ResultUtil<UserInfo> queryUserInoByName(String userName) {
+        return new ResultUtil<>("请求成功", userService.queryUserInfoByName(userName));
     }
 
     @ApiOperation(value = "根据用户openId查询用户信息", notes = "根据用户openId查询用户信息")
-    @RequestMapping("queryUserInfoByOpenId")
+    @RequestMapping(value = "queryUserInfoByOpenId",method = {RequestMethod.GET,RequestMethod.POST})
     @ResponseBody
-    public ResultUtil queryUserInfoByOpenId(String openId) {
-        return new ResultUtil("请求成功", userService.isExitUserByOpenId(openId));
+    public ResultUtil<UserInfo> queryUserInfoByOpenId(String openId) {
+        return new ResultUtil<>("请求成功", userService.isExitUserByOpenId(openId));
     }
-
-
 }

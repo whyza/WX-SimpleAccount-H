@@ -1,11 +1,11 @@
 --- # 端口 正式环境
-server:
-  port: 8443
-  ssl:
-    key-store: classpath:4183142_iazuresky.com.pfx
-    key-store-password: 90x06PJW
 #server:
-#    port: 8081
+#  port: 8443
+#  ssl:
+#    key-store: classpath:4183142_iazuresky.com.pfx
+#    key-store-password: 90x06PJW
+server:
+    port: 8081
 --- #数据源配置
 spring:
   datasource:

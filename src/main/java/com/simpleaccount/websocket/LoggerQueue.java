@@ -33,7 +33,7 @@ public class LoggerQueue
      * 消息入队
      *
      * @param log
-     * @return
+     * @return boolean
      */
     public boolean push(LoggerMessage log)
     {
@@ -43,7 +43,7 @@ public class LoggerQueue
     /**
      * 消息出队
      *
-     * @return
+     * @return LoggerMessage
      */
     public LoggerMessage poll()
     {
