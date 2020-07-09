@@ -1,16 +1,16 @@
 --- # 端口 正式环境
-#server:
-#  port: 8443
-#  ssl:
-#    key-store: classpath:2087746_iazuresky.com.pfx
-#    key-store-password: JSjkmCp8
 server:
-    port: 8081
+  port: 8443
+  ssl:
+    key-store: classpath:4183142_iazuresky.com.pfx
+    key-store-password: 90x06PJW
+#server:
+#    port: 8081
 --- #数据源配置
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/simpleaccount?characterEncoding=utf8&serverTimezone=GMT%2B8&allowMultiQueries=true&autoReconnect=true
+    url: jdbc:mysql://47.100.95.94:3306/simpleaccount?characterEncoding=utf8&serverTimezone=GMT%2B8&allowMultiQueries=true&autoReconnect=true
     username: root
     password: zaq123
 --- #mybatis配置
@@ -31,7 +31,7 @@ logging:
 
 spring:
   redis:
-    host: localhost
+    host: 47.100.95.94
     port: 6479
     password: Ls892903912
 logging.path:
