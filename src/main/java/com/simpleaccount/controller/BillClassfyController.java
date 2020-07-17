@@ -62,4 +62,9 @@ public class BillClassfyController {
     public Boolean addClassify(@RequestBody Billclassify billclassify){
         return BillTypeService.AddClassify(billclassify);
     }
+    @RequestMapping(value = "/setleftSelectData",method = {RequestMethod.GET,RequestMethod.POST})
+    public List<Billclassify> setleftSelectData(Integer userId,Integer classifyType){
+        return BillTypeService.setleftSelectData(userId,classifyType);
+    }
+
 }

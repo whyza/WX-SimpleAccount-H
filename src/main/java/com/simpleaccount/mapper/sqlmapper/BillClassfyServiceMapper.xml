@@ -98,4 +98,11 @@
             </if>
         </trim>
     </insert>
+    <select id="setleftSelectData" resultType="com.simpleaccount.entry.Billclassify" parameterType="java.lang.Integer">
+        SELECT b.classify,b.classfyName
+        FROM billclassify as b
+        WHERE (b.userId = #{userId} or b.userId = 0)
+        AND b.fClassfyId IS NOT NULL AND b.classifyType = #{classifyType}
+    </select>
+
 </mapper>

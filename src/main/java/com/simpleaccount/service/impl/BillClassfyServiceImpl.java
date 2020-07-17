@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -22,7 +23,7 @@ import java.util.List;
  */
 @Service
 public class BillClassfyServiceImpl implements BillClassfyService {
-    @Autowired
+    @Resource
     BillClassfyMapper billTypeMapper;
 
 
@@ -123,5 +124,11 @@ public class BillClassfyServiceImpl implements BillClassfyService {
         billclassify.setFClassfyId(new Long(0));
         return billTypeMapper.AddClassify(billclassify)>0;
     }
+
+    @Override
+    public List<Billclassify> setleftSelectData(Integer userId, Integer classifyType) {
+        return billTypeMapper.setleftSelectData(userId,classifyType);
+    }
+
 
 }

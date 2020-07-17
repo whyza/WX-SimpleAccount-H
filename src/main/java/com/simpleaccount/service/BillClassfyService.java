@@ -45,4 +45,6 @@ public interface BillClassfyService {
      */
     ResultUtil updateBillClassify(Billclassify billclassify);
     Boolean AddClassify(Billclassify billclassify);
+
+    List<Billclassify> setleftSelectData(@Param(value = "userId")Integer userId,@Param(value = "classifyType")Integer classifyType);
 }

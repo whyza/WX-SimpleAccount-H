@@ -49,4 +49,12 @@ public interface BillClassfyMapper {
 
     int AddClassify(Billclassify billclassify);
 
+    /**
+     * 根据userId查询用户的账单分类信息
+     * @param userId
+     * @param classifyType
+     * @return
+     */
+    List<Billclassify> setleftSelectData(@Param(value = "userId")Integer userId,@Param(value = "classifyType")Integer classifyType);
+
 }
